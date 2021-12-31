@@ -1,11 +1,6 @@
-# next-ts-template
+# esthermakes.tech
 
-A [Next](https://nextjs.org/) TypeScript template.
-
-Also comes configured with:
-
-* ESLint & Prettier: for enforcing good practices with TypeScript & Next / React
-* [husky](https://github.com/typicode/husky) & [lint-staged](https://github.com/okonet/lint-staged): for Git pre-commit hooks
+My (new) personal website.
 
 ## Getting Started
 
@@ -19,7 +14,3 @@ If you're using Gitkraken, run the following to [configure husky](https://github
 ```bash
 yarn husky:install
 ```
-
-## References
-
-* [Start a clean Next.js project with TypeScript, ESLint and Prettier from scratch](https://paulintrognon.fr/blog/typescript-prettier-eslint-next-js)
