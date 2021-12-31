@@ -7,23 +7,29 @@
 
 @layer base {
   body {
-    @apply bg-white dark:bg-black tracking-tight text-gray-700 dark:text-gray-200;
+    @apply bg-white dark:bg-black
+      text-gray-700 dark:text-gray-200
+      tracking-tight;
   }
 
   h1 {
-    @apply text-3xl text-black dark:text-white tracking-tight font-semibold;
+    @apply text-black dark:text-white 
+      text-3xl tracking-tight font-semibold;
   }
 
   h2 {
-    @apply text-2xl text-black dark:text-white tracking-tight font-semibold;
+    @apply text-black dark:text-white 
+      text-2xl tracking-tight font-semibold;
   }
 
   h3 {
-    @apply text-lg text-black dark:text-white tracking-tight font-semibold;
+    @apply text-black dark:text-white
+      text-lg tracking-tight font-semibold;
   }
 
   a {
-    @apply text-black dark:text-white font-medium underline;
+    @apply text-black dark:text-white
+      font-medium underline;
   }
 
   a:hover {
