@@ -23,6 +23,8 @@ const IndexPage = () => {
       <p className="text-gray-700">Gray 700</p>
       <p className="text-gray-800">Gray 800</p>
       <p className="text-gray-900">Gray 900</p>
+
+      <a href="/">Link</a>
     </div>
   );
 };
