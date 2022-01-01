@@ -34,7 +34,7 @@ const AboutPage = () => {
   };
 
   return (
-    <BaseLayout>
+    <BaseLayout title="About">
       <div className="w-full max-w-4xl mx-auto mt-8 mb-16 px-4 md:px-8">{renderIntro()}</div>
     </BaseLayout>
   );
