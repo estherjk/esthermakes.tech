@@ -31,7 +31,7 @@ export const Footer = () => {
 
   return (
     <footer className="w-full">
-      <div className="mx-auto px-4 md:px-8">
+      <div className="px-4 md:px-8">
         <div className="grid grid-cols-6 gap-4 my-6">
           <div className="col-span-6 flex items-center justify-center md:col-span-2 md:justify-start">
             <span className="text-sm">© 2022 Esther Jun Kim</span>
