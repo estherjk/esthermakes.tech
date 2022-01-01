@@ -1,6 +1,34 @@
-import Link from 'next/link';
+import { SocialMedia } from '@src/types';
 
 export const Footer = () => {
+  const socialLinks: SocialMedia[] = [
+    {
+      title: 'GitHub',
+      url: 'https://github.com/estherjk',
+      icon: 'fab fa-github',
+    },
+    {
+      title: 'YouTube',
+      url: 'https://www.youtube.com/c/EstherMakesTech',
+      icon: 'fab fa-youtube',
+    },
+    {
+      title: 'Instagram',
+      url: 'https://www.instagram.com/esthermakestech/',
+      icon: 'fab fa-instagram',
+    },
+    {
+      title: 'Twitter',
+      url: 'https://twitter.com/esthermakestech',
+      icon: 'fab fa-twitter',
+    },
+    {
+      title: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/estherjunkim',
+      icon: 'fab fa-linkedin-in',
+    },
+  ];
+
   return (
     <footer className="w-full">
       <div className="mx-auto px-4 md:px-8">
@@ -10,13 +38,25 @@ export const Footer = () => {
           </div>
 
           <div className="md:col-span-2 md:flex md:justify-center md:items-center hidden">
-            Social Media Icons
+            <div className="flex space-x-4">
+              {socialLinks.map((link, index) => {
+                return (
+                  <a key={index} href={link.url} target="_blank" rel="noreferrer">
+                    <i className={link.icon} />
+                  </a>
+                );
+              })}
+            </div>
           </div>
 
           <div className="md:col-span-2 md:flex md:justify-end md:items-center hidden">
-            <Link href="https://github.com/estherjk/esthermakes.tech/blob/main/LICENSE">
-              <a className="text-sm">License</a>
-            </Link>
+            <a
+              href="https://github.com/estherjk/esthermakes.tech/blob/main/LICENSE"
+              className="text-sm"
+              target="_blank"
+              rel="noreferrer">
+              License
+            </a>
           </div>
         </div>
       </div>
