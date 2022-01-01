@@ -27,6 +27,11 @@ export const Footer = () => {
       url: 'https://www.linkedin.com/in/estherjunkim',
       icon: 'fab fa-linkedin-in',
     },
+    {
+      title: 'Google Scholar',
+      url: 'https://scholar.google.com/citations?hl=en&user=QfQuFmgAAAAJ',
+      icon: 'fas fa-graduation-cap',
+    },
   ];
 
   return (
