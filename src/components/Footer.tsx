@@ -34,6 +34,16 @@ export const Footer = () => {
     },
   ];
 
+  const renderSocialLinks = () => {
+    return socialLinks.map((link, index) => {
+      return (
+        <a key={index} href={link.url} target="_blank" rel="noreferrer">
+          <i className={link.icon} />
+        </a>
+      );
+    });
+  };
+
   return (
     <footer className="w-full">
       <div className="px-4 md:px-8">
@@ -43,15 +53,7 @@ export const Footer = () => {
           </div>
 
           <div className="md:col-span-2 col-span-6 flex justify-center items-center">
-            <div className="flex space-x-8">
-              {socialLinks.map((link, index) => {
-                return (
-                  <a key={index} href={link.url} target="_blank" rel="noreferrer">
-                    <i className={link.icon} />
-                  </a>
-                );
-              })}
-            </div>
+            <div className="flex space-x-8">{renderSocialLinks()}</div>
           </div>
 
           <div className="md:col-span-2 md:flex md:justify-end items-center hidden">
