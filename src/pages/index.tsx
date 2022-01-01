@@ -1,6 +1,8 @@
+import { BaseLayout } from '@src/layouts';
+
 const IndexPage = () => {
   return (
-    <div className="p-24">
+    <BaseLayout>
       <div className="text-6xl">Hello, world.</div>
 
       <h1>Heading 1</h1>
@@ -25,7 +27,7 @@ const IndexPage = () => {
       <p className="text-gray-900">Gray 900</p>
 
       <a href="/">Link</a>
-    </div>
+    </BaseLayout>
   );
 };
 
