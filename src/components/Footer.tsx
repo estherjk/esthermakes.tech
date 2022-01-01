@@ -43,7 +43,7 @@ export const Footer = () => {
           </div>
 
           <div className="md:col-span-2 col-span-6 flex justify-center items-center">
-            <div className="flex space-x-4">
+            <div className="flex space-x-8">
               {socialLinks.map((link, index) => {
                 return (
                   <a key={index} href={link.url} target="_blank" rel="noreferrer">
