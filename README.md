@@ -2,6 +2,15 @@
 
 My (new) personal website.
 
+## Tech Stack
+
+* [Next.js](https://nextjs.org/): "The [React](https://reactjs.org/) framework for production"
+* [TypeScript](https://www:.typescriptlang.org/): Types for JavaScript
+* [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework
+* [Vercel](https://vercel.com/): For making web deployments easy
+
+Check out [next-ts-template](https://github.com/estherjk/next-ts-template) to get started quickly with Next.js & TypeScript.
+
 ## Getting Started
 
 ```bash
