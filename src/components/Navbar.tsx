@@ -1,8 +1,11 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { NavbarLink } from '@src/types';
 
 export const Navbar = () => {
+  const router = useRouter();
+
   const navbarLinks: NavbarLink[] = [
     {
       title: 'About',
@@ -14,7 +17,13 @@ export const Navbar = () => {
     return navbarLinks.map((link, index) => {
       return (
         <Link key={index} href={link.url}>
-          <a className="uppercase no-underline font-semibold hover:text-brand">{link.title}</a>
+          <a
+            className={
+              'uppercase no-underline font-semibold hover:text-brand ' +
+              (router.pathname == link.url ? 'text-brand' : '')
+            }>
+            {link.title}
+          </a>
         </Link>
       );
     });
