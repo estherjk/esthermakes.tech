@@ -47,6 +47,9 @@ module.exports = {
         // No need to import React when using Next.js
         'react/react-in-jsx-scope': 'off',
 
+        // Disable unescaped entities
+        'react/no-unescaped-entities': 0,
+
         // No unused vars, please!
         '@typescript-eslint/no-unused-vars': ['error'],
 
