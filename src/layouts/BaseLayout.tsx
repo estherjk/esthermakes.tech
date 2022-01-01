@@ -4,15 +4,21 @@ import { Footer, Navbar } from '@src/components';
 
 interface BaseLayoutProps {
   title?: string;
+  image?: string;
   children: React.ReactNode;
 }
 
 export const BaseLayout = (props: BaseLayoutProps) => {
-  const { title, children } = props;
+  const { title, image = '/images/og-default.png', children } = props;
   return (
     <>
       <Head>
         <title>{title ? `${title} | Esther Makes Tech` : 'Esther Makes Tech'}</title>
+
+        {/* Open Graph */}
+        <meta content={title} property="og:title" key="og:title" />
+        <meta content="https://esthermakes.tech" property="og:url" key="og:url" />
+        <meta content={`https://esthermakes.tech${image}`} property="og:image" key="og:image" />
 
         {/* Favicons */}
         <link rel="icon" type="image/png" href="/logo/logo-circle-16x16.png" sizes="16x16" />
