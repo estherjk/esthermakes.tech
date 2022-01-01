@@ -39,6 +39,18 @@ export const BaseLayout = (props: BaseLayoutProps) => {
           href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
           crossOrigin="anonymous"></link>
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQ3KH6PLYF"></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-EQ3KH6PLYF');
+          `}
+        </script>
       </Head>
 
       {/* For sticky footer */}
