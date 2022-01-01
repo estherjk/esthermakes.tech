@@ -35,7 +35,7 @@ const AboutPage = () => {
 
   return (
     <BaseLayout title="About" image="/images/headshot.jpg">
-      <div className="w-full max-w-4xl mx-auto mt-8 mb-16 px-4 md:px-8">{renderIntro()}</div>
+      <div className="w-full max-w-4xl mx-auto">{renderIntro()}</div>
     </BaseLayout>
   );
 };
