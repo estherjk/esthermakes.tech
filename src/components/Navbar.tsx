@@ -1,10 +1,33 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { NavbarLink } from '@src/types';
 
 export const Navbar = () => {
-  // Keep navbar links empty until the corresponding pages are ready
-  const navbarLinks: NavbarLink[] = [];
+  const router = useRouter();
+
+  const navbarLinks: NavbarLink[] = [
+    {
+      title: 'About',
+      url: '/about',
+    },
+  ];
+
+  const renderNavbarLinks = () => {
+    return navbarLinks.map((link, index) => {
+      return (
+        <Link key={index} href={link.url}>
+          <a
+            className={
+              'uppercase no-underline font-semibold hover:text-brand ' +
+              (router.pathname == link.url ? 'text-brand' : '')
+            }>
+            {link.title}
+          </a>
+        </Link>
+      );
+    });
+  };
 
   return (
     <header className="w-full">
@@ -20,15 +43,7 @@ export const Navbar = () => {
 
           <div className="col-span-5 md:col-span-4 flex items-center">
             <div className="w-full flex justify-between md:justify-center md:space-x-8">
-              {navbarLinks.map((link, index) => {
-                return (
-                  <Link key={index} href={link.url}>
-                    <a className="uppercase no-underline font-semibold hover:text-brand">
-                      {link.title}
-                    </a>
-                  </Link>
-                );
-              })}
+              {renderNavbarLinks()}
             </div>
           </div>
         </div>
