@@ -38,11 +38,11 @@ export const Footer = () => {
     <footer className="w-full">
       <div className="px-4 md:px-8">
         <div className="grid grid-cols-6 gap-4 my-6">
-          <div className="col-span-6 flex items-center justify-center md:col-span-2 md:justify-start">
+          <div className="md:col-span-2 md:flex md:justify-start items-center hidden">
             <span className="text-sm">© 2022 Esther Jun Kim</span>
           </div>
 
-          <div className="md:col-span-2 md:flex md:justify-center md:items-center hidden">
+          <div className="md:col-span-2 col-span-6 flex justify-center items-center">
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => {
                 return (
@@ -54,7 +54,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="md:col-span-2 md:flex md:justify-end md:items-center hidden">
+          <div className="md:col-span-2 md:flex md:justify-end items-center hidden">
             <a
               href="https://github.com/estherjk/esthermakes.tech/blob/main/LICENSE"
               className="text-sm"
