@@ -3,8 +3,12 @@ import Link from 'next/link';
 import { NavbarLink } from '@src/types';
 
 export const Navbar = () => {
-  // Keep navbar links empty until the corresponding pages are ready
-  const navbarLinks: NavbarLink[] = [];
+  const navbarLinks: NavbarLink[] = [
+    {
+      title: 'About',
+      url: '/about',
+    },
+  ];
 
   return (
     <header className="w-full">
