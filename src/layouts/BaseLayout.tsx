@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Footer } from '@src/components';
+import { Footer, Navbar } from '@src/components';
 
 interface BaseLayoutProps {
   title?: string;
@@ -24,7 +24,7 @@ export const BaseLayout = (props: BaseLayoutProps) => {
 
       {/* For sticky footer */}
       <div className="max-w-screen-2xl mx-auto flex flex-col h-screen justify-between">
-        <div>Header</div>
+        <Navbar />
         <main>{children}</main>
         <Footer />
       </div>
