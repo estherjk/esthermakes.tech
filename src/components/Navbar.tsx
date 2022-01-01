@@ -10,6 +10,16 @@ export const Navbar = () => {
     },
   ];
 
+  const renderNavbarLinks = () => {
+    return navbarLinks.map((link, index) => {
+      return (
+        <Link key={index} href={link.url}>
+          <a className="uppercase no-underline font-semibold hover:text-brand">{link.title}</a>
+        </Link>
+      );
+    });
+  };
+
   return (
     <header className="w-full">
       <div className="px-4 md:px-8">
@@ -24,15 +34,7 @@ export const Navbar = () => {
 
           <div className="col-span-5 md:col-span-4 flex items-center">
             <div className="w-full flex justify-between md:justify-center md:space-x-8">
-              {navbarLinks.map((link, index) => {
-                return (
-                  <Link key={index} href={link.url}>
-                    <a className="uppercase no-underline font-semibold hover:text-brand">
-                      {link.title}
-                    </a>
-                  </Link>
-                );
-              })}
+              {renderNavbarLinks()}
             </div>
           </div>
         </div>
