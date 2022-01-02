@@ -42,15 +42,17 @@ export const BaseLayout = (props: BaseLayoutProps) => {
 
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQ3KH6PLYF"></script>
-        <script>
-          {`
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
   
             gtag('config', 'G-EQ3KH6PLYF');
-          `}
-        </script>
+            `,
+          }}
+        />
       </Head>
 
       {/* For sticky footer */}
