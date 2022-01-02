@@ -56,9 +56,9 @@ export const BaseLayout = (props: BaseLayoutProps) => {
       </Head>
 
       {/* For sticky footer */}
-      <div className="max-w-screen-2xl mx-auto flex flex-col h-screen justify-between">
+      <div className="flex flex-col min-h-screen max-w-screen-2xl mx-auto">
         <Navbar />
-        <main className="my-8 md:my-16 px-4 md:px-8">{children}</main>
+        <main className="flex flex-auto my-8 md:my-16 px-4 md:px-8">{children}</main>
         <Footer />
       </div>
     </>
