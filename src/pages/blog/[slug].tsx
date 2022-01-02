@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 
 import { getAllPosts, getPost } from '@src/api/markdown';
+import PostLayout from '@src/layouts/PostLayout';
 import { Post } from '@src/types';
 
 type Props = {
@@ -15,12 +16,7 @@ const PostPage = (props: Props) => {
     return <div>Page not found.</div>;
   }
 
-  return (
-    <div>
-      <h1>{post.title}</h1>
-      <div>{post.content}</div>
-    </div>
-  );
+  return <PostLayout post={post} />;
 };
 
 export default PostPage;

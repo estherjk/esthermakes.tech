@@ -14,7 +14,7 @@ const BlogPage = (props: Props) => {
   const { posts } = props;
 
   return (
-    <BaseLayout title="About" image="/images/headshot.jpg">
+    <BaseLayout title="Blog">
       <div className="w-full max-w-5xl mx-auto">
         <div className="mb-8">
           <Title>Blog Posts</Title>
