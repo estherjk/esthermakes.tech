@@ -15,6 +15,10 @@ export const Navbar = () => {
       title: 'Projects',
       url: '/projects',
     },
+    {
+      title: 'Blog',
+      url: '/blog',
+    },
   ];
 
   const renderNavbarLinks = () => {
