@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { getAllPosts } from '@src/api/markdown';
 import { Title } from '@src/components/Typography';
 import { BaseLayout } from '@src/layouts';
@@ -22,7 +24,11 @@ const BlogPage = (props: Props) => {
           <tbody>
             {posts.map((post) => (
               <tr key={post.slug} className="border-b">
-                <td className="py-4 text-left">{post.title}</td>
+                <td className="py-4 text-left">
+                  <Link href={`/blog/${post.slug}`}>
+                    <a>{post.title}</a>
+                  </Link>
+                </td>
                 <td className="py-4 text-right">{formatDate(post.dateCreated)}</td>
               </tr>
             ))}
