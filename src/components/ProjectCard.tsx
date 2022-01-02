@@ -1,9 +1,10 @@
 import { Project } from '@src/types';
+import { formatDate } from '@src/util';
 
 type Props = Project;
 
 export const ProjectCard = (props: Props) => {
-  const { title, image, description, url } = props;
+  const { title, image, description, url, dateUpdated } = props;
 
   return (
     <div className="flex flex-col">
@@ -15,7 +16,10 @@ export const ProjectCard = (props: Props) => {
           <img className="w-full" src={image} alt={description} />
 
           <div className="px-4 py-2">
-            <h2 className="text-base">{title}</h2>
+            <h2 className="text-base mb-1">{title}</h2>
+            <p className="text-xs font-normal text-gray-700 dark:text-gray-200">
+              Updated {formatDate(dateUpdated)}
+            </p>
             <p className="text-sm font-normal text-gray-700 dark:text-gray-200">{description}</p>
           </div>
         </a>
