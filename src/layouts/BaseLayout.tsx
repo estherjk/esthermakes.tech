@@ -42,21 +42,23 @@ export const BaseLayout = (props: BaseLayoutProps) => {
 
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQ3KH6PLYF"></script>
-        <script>
-          {`
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
   
             gtag('config', 'G-EQ3KH6PLYF');
-          `}
-        </script>
+            `,
+          }}
+        />
       </Head>
 
       {/* For sticky footer */}
-      <div className="max-w-screen-2xl mx-auto flex flex-col h-screen justify-between">
+      <div className="flex flex-col min-h-screen max-w-screen-2xl mx-auto">
         <Navbar />
-        <main className="flex grow mt-8 mb-16 px-4 md:px-8">{children}</main>
+        <main className="flex flex-auto my-8 md:my-16 px-4 md:px-8">{children}</main>
         <Footer />
       </div>
     </>
