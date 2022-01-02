@@ -17,8 +17,13 @@ const AboutPage = () => {
             .
           </p>
           <p>
-            I love learning. I'm particularly interested in making things that combine hardware and
-            software, that go up and down the stack, or are in areas like AI and IoT.
+            I love learning, and I have a wide variety of interests that range from web, mobile, AI,
+            and IoT. It's essential for me to learn by doing, as well as documenting what I've
+            learned. That's how I got started in creating personal projects on{' '}
+            <a href="https://github.com/estherjk" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            .
           </p>
           <p>
             My favorite hobby is reading. Check out my{' '}
