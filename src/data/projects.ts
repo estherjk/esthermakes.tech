@@ -44,6 +44,13 @@ export const projects: Project[] = [
     dateUpdated: '2017-12-27',
   },
   {
+    title: 'Frogger',
+    image: '/images/projects/frogger.jpg',
+    description: "My final project for Udacity's Object-Oriented JavaScript class",
+    url: 'https://estherjk.github.io/frogger/',
+    dateUpdated: '2020-04-22',
+  },
+  {
     title: 'Google Assistant Show',
     image: '/images/projects/google-assistant-show.jpg',
     description:
