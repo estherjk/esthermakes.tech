@@ -5,7 +5,7 @@ import { BaseLayout } from '@src/layouts';
 const ProjectsPage = () => {
   return (
     <BaseLayout title="Projects">
-      <div className="w-full max-w-4xl mx-auto">
+      <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-4">
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
