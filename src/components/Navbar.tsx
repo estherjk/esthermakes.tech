@@ -11,6 +11,10 @@ export const Navbar = () => {
       title: 'About',
       url: '/about',
     },
+    {
+      title: 'Projects',
+      url: '/projects',
+    },
   ];
 
   const renderNavbarLinks = () => {
@@ -42,7 +46,7 @@ export const Navbar = () => {
           </div>
 
           <div className="col-span-5 md:col-span-4 flex items-center">
-            <div className="w-full flex justify-between md:justify-center md:space-x-8">
+            <div className="w-full flex justify-start md:justify-center space-x-8">
               {renderNavbarLinks()}
             </div>
           </div>
