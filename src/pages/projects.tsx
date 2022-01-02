@@ -21,16 +21,19 @@ const ProjectsPage = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              image={project.image}
-              description={project.description}
-              url={project.url}
-              dateUpdated={project.dateUpdated}
-            />
-          ))}
+          {projects
+            // Sort by dateUpdated in descending order
+            .sort((project1, project2) => (project1.dateUpdated > project2.dateUpdated ? -1 : 1))
+            .map((project, index) => (
+              <ProjectCard
+                key={index}
+                title={project.title}
+                image={project.image}
+                description={project.description}
+                url={project.url}
+                dateUpdated={project.dateUpdated}
+              />
+            ))}
         </div>
       </div>
     </BaseLayout>
