@@ -1,21 +1,29 @@
 import { ProjectCard } from '@src/components';
+import { Title } from '@src/components/Typography';
 import { projects } from '@src/data';
 import { BaseLayout } from '@src/layouts';
 
 const ProjectsPage = () => {
   return (
     <BaseLayout title="Projects">
-      <div className="grid gap-8 md:grid-cols-3 lg:grid-cols-4">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            image={project.image}
-            description={project.description}
-            url={project.url}
-            dateUpdated={project.dateUpdated}
-          />
-        ))}
+      <div className="flex flex-col w-full max-w-5xl mx-auto">
+        <div className="mb-8">
+          <Title>Making & Learning</Title>
+          <p>This is a collection of projects that I have developed over the years.</p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              image={project.image}
+              description={project.description}
+              url={project.url}
+              dateUpdated={project.dateUpdated}
+            />
+          ))}
+        </div>
       </div>
     </BaseLayout>
   );

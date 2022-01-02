@@ -1,3 +1,4 @@
+import { Title } from '@src/components/Typography';
 import { BaseLayout } from '@src/layouts';
 
 const AboutPage = () => {
@@ -33,7 +34,13 @@ const AboutPage = () => {
 
   return (
     <BaseLayout title="About" image="/images/headshot.jpg">
-      <div className="w-full max-w-4xl mx-auto">{renderIntro()}</div>
+      <div className="w-full max-w-5xl mx-auto">
+        <div className="mb-8">
+          <Title>About Me</Title>
+        </div>
+
+        {renderIntro()}
+      </div>
     </BaseLayout>
   );
 };
