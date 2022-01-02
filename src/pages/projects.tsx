@@ -11,12 +11,12 @@ const ProjectsPage = () => {
           <Title>Making & Learning</Title>
           <p>
             This is a collection of projects that I have worked on over the years. It is a
-            reflection of my personal interests & what I was eager to learn at the time. The source
-            code is available on{' '}
+            reflection of my personal interests and what I was eager to learn at the time. The
+            source code is available on{' '}
             <a href="https://github.com/estherjk" target="_blank" rel="noreferrer">
               GitHub
             </a>{' '}
-            & free to use.
+            and free to use.
           </p>
         </div>
 
