@@ -82,7 +82,7 @@ export const projects: Project[] = [
     dateUpdated: '2016-04-05',
   },
   {
-    title: 'multi-screen-demo',
+    title: 'Multi-Screen Demo',
     image: '/images/projects/multi-screen-demo.jpg',
     description: 'Controlling your PC web browser from your mobile phone',
     url: 'https://github.com/estherjk/multi-screen-demo',
