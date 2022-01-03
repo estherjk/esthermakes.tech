@@ -27,6 +27,11 @@
       text-lg tracking-tight font-semibold mb-2;
   }
 
+  h4 {
+    @apply text-black dark:text-white
+      text-base tracking-tight font-semibold mb-2;
+  }
+
   p {
     @apply mb-2;
   }
