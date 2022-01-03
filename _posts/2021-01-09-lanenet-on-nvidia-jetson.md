@@ -1,6 +1,7 @@
 ---
 title: 'LaneNet on NVIDIA Jetson'
 dateCreated: '2021-01-09'
+image: '/images/lanenet-jetson.jpg'
 ---
 
 ## Introduction
