@@ -28,7 +28,7 @@ type Params = {
 };
 
 export const getStaticProps = async ({ params }: Params) => {
-  const post = getPost(params.slug, ['slug', 'title', 'dateCreated', 'content']);
+  const post = getPost(params.slug, ['slug', 'title', 'image', 'dateCreated', 'content']);
 
   return {
     props: { post },
