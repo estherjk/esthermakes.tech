@@ -29,7 +29,11 @@ const BlogPage = (props: Props) => {
                     <a>{post.title}</a>
                   </Link>
                 </td>
-                <td className="py-4 text-right">{formatDate(post.dateCreated)}</td>
+                <td className="py-4 text-right">
+                  {/* Use concise date format on small screens */}
+                  <span className="hidden md:inline">{formatDate(post.dateCreated)}</span>
+                  <span className="md:hidden">{formatDate(post.dateCreated, 'MM/dd/yy')}</span>
+                </td>
               </tr>
             ))}
           </tbody>
