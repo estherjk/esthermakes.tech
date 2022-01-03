@@ -6,7 +6,7 @@ image: '/images/projects/esthers-books-swiftui.png'
 
 ## Introduction
 
-I've been itching to play with SwiftUI for awhile, and I finally made some time by giving a visual refresh to my original [Reading Quantified iOS app](/blog/2019/06/11/reading-quantifed-ios-edition/). I also renamed it to Esther's Books, since it's focused more on showing what I've read and less on the metrics; my [dashboard](http://esthermakes.tech/reading-quantified/) is focused on that.
+I've been itching to play with SwiftUI for awhile, and I finally made some time by giving a visual refresh to my original [Reading Quantified iOS app](/blog/2019-06-11-reading-quantifed-ios-edition/). I also renamed it to Esther's Books, since it's focused more on showing what I've read and less on the metrics; my [dashboard](http://esthermakes.tech/reading-quantified/) is focused on that.
 
 Here it is [in action on my iPad](https://www.instagram.com/p/CES262hDjM-/?utm_source=ig_web_copy_link), and it also runs on iPhone & Mac.
 
