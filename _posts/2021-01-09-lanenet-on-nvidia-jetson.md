@@ -12,7 +12,7 @@ LaneNet is a real-time deep neural network model used for lane detection. An uno
 
 ## From TensorFlow to TensorRT
 
-Unfortunately, running the TensorFlow model out of the box resulted in memory & performance issues on the Xavier NX. NVIDIA offers TensorRT to speed up inference on their platforms, so the next major step was to port the TensorFlow model to TensorRT. This [forked repo](https://github.com/estherjk/lanenet-lane-detection/blob/master/README_SUPPLEMENT.md) contains additional files, as well as a [`Dockerfile`](https://github.com/estherjk/lanenet-lane-detection/blob/master/Dockerfile) with all the necessary dependencies to run this on the Xavier NX.
+Unfortunately, running the TensorFlow model out of the box resulted in memory & performance issues on the Xavier NX. NVIDIA offers TensorRT to speed up inference on their platforms, so the next major step was to port the TensorFlow model to TensorRT. This [forked repo](https://github.com/estherjk/lanenet-lane-detection) contains additional files, as well as a [`Dockerfile`](https://github.com/estherjk/lanenet-lane-detection/blob/master/jetson/Dockerfile) with all the necessary dependencies to run this on the Xavier NX.
 
 Starting with TensorRT 7.0, the preferred method is to use the [ONNX workflow](https://developer.nvidia.com/blog/speeding-up-deep-learning-inference-using-tensorflow-onnx-and-tensorrt/), where a TensorFlow model is converted to the ONNX format, which is then used to build the TensorRT engine. Other frameworks are also supported, e.g. PyTorch, Keras, & Caffe.
 
