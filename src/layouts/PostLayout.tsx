@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkSlug from 'remark-slug';
 
-import { CodeBlock, Heading2, Heading3, Image } from '@src/components/Renderers';
+import { CodeBlock, Heading2, Heading3, Image, UnorderedList } from '@src/components/Renderers';
 import { Title } from '@src/components/Typography';
 import { BaseLayout } from '@src/layouts';
 import { Post } from '@src/types';
@@ -12,6 +12,7 @@ const components = {
   h2: Heading2,
   h3: Heading3,
   img: Image,
+  ul: UnorderedList,
 };
 
 type Props = {
