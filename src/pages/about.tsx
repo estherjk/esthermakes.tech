@@ -39,7 +39,7 @@ const AboutPage = () => {
 
   return (
     <BaseLayout title="About" image="/images/headshot.jpg">
-      <div className="w-full max-w-5xl mx-auto">
+      <div className="w-full max-w-4xl mx-auto">
         <div className="mb-8">
           <Title>About Me</Title>
         </div>
