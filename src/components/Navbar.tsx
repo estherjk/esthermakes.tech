@@ -1,25 +1,10 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { NavbarLink } from '@src/types';
+import { navbarLinks } from '@src/data';
 
 export const Navbar = () => {
   const router = useRouter();
-
-  const navbarLinks: NavbarLink[] = [
-    {
-      title: 'About',
-      url: '/about',
-    },
-    {
-      title: 'Projects',
-      url: '/projects',
-    },
-    {
-      title: 'Blog',
-      url: '/blog',
-    },
-  ];
 
   const renderNavbarLinks = () => {
     return navbarLinks.map((link, index) => {
