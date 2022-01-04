@@ -23,7 +23,7 @@ const BlogPage = (props: Props) => {
         <table className="min-w-full">
           <tbody>
             {posts.map((post) => (
-              <tr key={post.slug} className="border-b">
+              <tr key={post.slug} className="border-b border-gray-200 dark:border-gray-700">
                 <td className="py-4 text-left">
                   <Link href={`/blog/${post.slug}`}>
                     <a className="no-underline">{post.title}</a>
