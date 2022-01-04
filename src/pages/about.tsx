@@ -7,14 +7,10 @@ const AboutPage = () => {
       <div className="md:flex md:justify-between">
         <img src="/images/headshot.jpg" className="rounded-lg" />
         <div className="mt-4 md:mt-0 md:ml-4">
-          <p>Hi, I'm Esther Jun Kim and I like to make things.</p>
+          <p>Hi, I'm Esther Jun Kim.</p>
           <p>
-            I'm based in the San Francisco Bay Area and am currently the Head of Application
-            Engineering at{' '}
-            <a href="https://www.riiidlabs.com/" target="_blank" rel="noreferrer">
-              Riiid Labs
-            </a>
-            .
+            I am an engineering manager, software engineer, and researcher based in the San
+            Francisco Bay Area.
           </p>
           <p>
             I love learning, and I have a wide variety of interests that range from web, mobile, AI,
