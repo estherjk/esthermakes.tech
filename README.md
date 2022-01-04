@@ -5,7 +5,7 @@ My (new) personal website.
 ## Tech Stack
 
 * [Next.js](https://nextjs.org/): "The [React](https://reactjs.org/) framework for production"
-* [TypeScript](https://www:.typescriptlang.org/): Types for JavaScript
+* [TypeScript](https://www.typescriptlang.org/): Types for JavaScript
 * [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework
 * [React Markdown](https://github.com/remarkjs/react-markdown): For rendering markdown content (i.e. the blog posts)
 * [Vercel](https://vercel.com/): For making web deployments easy
