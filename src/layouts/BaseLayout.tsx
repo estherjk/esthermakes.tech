@@ -20,6 +20,16 @@ export const BaseLayout = (props: BaseLayoutProps) => {
         <meta content="https://esthermakes.tech" property="og:url" key="og:url" />
         <meta content={`https://esthermakes.tech${image}`} property="og:image" key="og:image" />
 
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary" key="twitter:card" />
+        <meta property="twitter:title" content={title} key="twitter:title" />
+        <meta
+          property="twitter:image"
+          content={`https://esthermakes.tech${image}`}
+          key="twitter:image"
+        />
+        <meta name="twitter:site" content="@esthermakestech" key="twitter:site" />
+
         {/* Favicons */}
         <link rel="icon" type="image/png" href="/logo/logo-circle-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="/logo/logo-circle-32x32.png" sizes="32x32" />
