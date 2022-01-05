@@ -2,13 +2,13 @@ import Head from 'next/head';
 
 import { Footer, Navbar } from '@src/components';
 
-interface BaseLayoutProps {
+type Props = {
   title?: string;
   image?: string;
   children: React.ReactNode;
-}
+};
 
-export const BaseLayout = (props: BaseLayoutProps) => {
+export const BaseLayout = (props: Props) => {
   const { title, image = '/images/og-default.png', children } = props;
   return (
     <>
