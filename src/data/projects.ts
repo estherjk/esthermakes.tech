@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "Esther's Books",
     image: '/images/projects/esthers-books-swiftui.png',
     description: 'My reading habits',
-    url: 'https://github.com/estherjk/reading-quantified',
+    url: 'https://github.com/estherjk/esthers-books-swiftui',
     dateUpdated: '2020-08-01',
   },
   {
