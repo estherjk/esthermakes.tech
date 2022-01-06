@@ -13,8 +13,8 @@ export const Navbar = () => {
         <Link key={index} href={link.url}>
           <a
             className={
-              'uppercase no-underline font-semibold hover:text-brand ' +
-              (router.pathname == link.url ? 'text-brand' : '')
+              'uppercase no-underline font-semibold hover:text-brand dark:hover:text-brand' +
+              (router.pathname == link.url ? ' text-brand dark:text-brand' : '')
             }>
             {link.title}
           </a>
