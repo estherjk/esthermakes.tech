@@ -1,16 +1,14 @@
-import { useState } from 'react';
-
 import { AppearanceListGroupItem } from '@src/components/AppearanceListGroup';
 import { ListGroup } from '@src/components/ListGroup';
 import { appearanceControls } from '@src/data';
+import { useAppearance } from '@src/hooks';
 import { ApperanceMode } from '@src/types';
 
 export const AppearanceListGroup = () => {
-  const [mode, setMode] = useState<ApperanceMode>('system');
+  const [mode, setMode] = useAppearance('system');
 
   const onModeSelected = (mode: ApperanceMode) => {
     setMode(mode);
-    console.log(`Selected ${mode}`);
   };
 
   return (
