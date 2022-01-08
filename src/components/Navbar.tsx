@@ -35,13 +35,14 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          <div className="col-span-4 md:col-span-4 flex items-center">
+          <div className="col-span-5 md:col-span-4 flex items-center">
             <div className="w-full flex justify-start md:justify-center space-x-8">
               {renderNavbarLinks()}
             </div>
           </div>
 
-          <div className="col-span-1 flex justify-end items-center">
+          {/* Don't show on small screens */}
+          <div className="hidden md:col-span-1 md:flex justify-end items-center">
             <AppearanceButton />
           </div>
         </div>
