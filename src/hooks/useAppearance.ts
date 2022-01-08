@@ -1,13 +1,16 @@
 import { useEffect } from 'react';
 
 import { useLocalStorage } from '@src/hooks';
-import { AppearanceMode } from '@src/types';
+import { AppearanceMode, SetAppearanceMode } from '@src/types';
 
 export const useAppearance = (defaultMode: AppearanceMode) => {
   const KEY_APPEARANCE = 'mode';
   const preferDarkQuery = '(prefers-color-scheme: dark)';
 
-  const [mode, setMode] = useLocalStorage(KEY_APPEARANCE, defaultMode);
+  const [modeString, setModeString] = useLocalStorage(KEY_APPEARANCE, defaultMode);
+
+  const mode = modeString as AppearanceMode;
+  const setMode = setModeString as SetAppearanceMode;
 
   useEffect(() => {
     const mediaQuery = window.matchMedia(preferDarkQuery);
@@ -36,7 +39,9 @@ export const useAppearance = (defaultMode: AppearanceMode) => {
     }
   }, [mode]);
 
-  // Cast our array as a `const` instead of typing out all the types...
+  // Explicitly set return types for our hook
   // Reference: https://kentcdodds.com/blog/wrapping-react-use-state-with-type-script
-  return [mode, setMode] as const;
+  const returnValue: [AppearanceMode, SetAppearanceMode] = [mode as AppearanceMode, setMode];
+
+  return returnValue;
 };
