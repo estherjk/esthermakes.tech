@@ -24,11 +24,11 @@ export const useAppearance = (defaultMode: AppearanceMode) => {
   }, []);
 
   useEffect(() => {
-    if (mode === 'dark') {
+    if (mode === AppearanceMode.DARK) {
       document.documentElement.classList.add('dark');
-    } else if (mode === 'system' && window.matchMedia(preferDarkQuery).matches) {
+    } else if (mode === AppearanceMode.SYSTEM && window.matchMedia(preferDarkQuery).matches) {
       document.documentElement.classList.add('dark');
-    } else if (mode === 'light') {
+    } else if (mode === AppearanceMode.LIGHT) {
       document.documentElement.classList.remove('dark');
     } else {
       document.documentElement.classList.remove('dark');
