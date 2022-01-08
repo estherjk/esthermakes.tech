@@ -27,21 +27,30 @@ export const useAppearance = (defaultMode: AppearanceMode) => {
   }, []);
 
   useEffect(() => {
-    if (mode === AppearanceMode.DARK) {
-      document.documentElement.classList.add('dark');
-    } else if (mode === AppearanceMode.SYSTEM && window.matchMedia(preferDarkQuery).matches) {
-      document.documentElement.classList.add('dark');
-    } else if (mode === AppearanceMode.LIGHT) {
-      document.documentElement.classList.remove('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.removeItem(KEY_APPEARANCE);
+    updateClassList(mode);
+  }, [mode, setModeString]);
+
+  const updateClassList = (mode: AppearanceMode) => {
+    switch (mode) {
+      case AppearanceMode.DARK:
+        document.documentElement.classList.add('dark');
+        break;
+      case AppearanceMode.LIGHT:
+        document.documentElement.classList.remove('dark');
+        break;
+      case AppearanceMode.SYSTEM:
+        if (window.matchMedia(preferDarkQuery).matches) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+        break;
     }
-  }, [mode]);
+  };
 
   // Explicitly set return types for our hook
   // Reference: https://kentcdodds.com/blog/wrapping-react-use-state-with-type-script
-  const returnValue: [AppearanceMode, SetAppearanceMode] = [mode as AppearanceMode, setMode];
+  const returnValue: [AppearanceMode, SetAppearanceMode] = [mode, setMode];
 
   return returnValue;
 };
