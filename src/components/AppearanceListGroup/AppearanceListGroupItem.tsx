@@ -1,9 +1,11 @@
 import { ListGroupItem } from '@src/components/ListGroup';
-import { AppearanceControl } from '@src/types';
+import { AppearanceMode } from '@src/types';
 
 type ListItemType = 'default' | 'first' | 'last';
 
-type Props = AppearanceControl & {
+type Props = {
+  mode: AppearanceMode;
+  icon: string;
   active?: boolean;
   type?: ListItemType;
   onClick?: () => void;

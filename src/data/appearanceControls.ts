@@ -1,16 +1,14 @@
-import { AppearanceControl } from '@src/types';
+import { AppearanceControls, AppearanceMode } from '@src/types';
 
-export const appearanceControls: AppearanceControl[] = [
-  {
-    mode: 'light',
+// Reference: https://stackoverflow.com/a/57312014
+export const appearanceControls: AppearanceControls = {
+  [AppearanceMode.LIGHT]: {
     icon: 'far fa-sun',
   },
-  {
-    mode: 'dark',
+  [AppearanceMode.DARK]: {
     icon: 'far fa-moon',
   },
-  {
-    mode: 'system',
+  [AppearanceMode.SYSTEM]: {
     icon: 'fas fa-desktop',
   },
-];
+};

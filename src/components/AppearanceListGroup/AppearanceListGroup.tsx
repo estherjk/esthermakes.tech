@@ -2,10 +2,10 @@ import { AppearanceListGroupItem } from '@src/components/AppearanceListGroup';
 import { ListGroup } from '@src/components/ListGroup';
 import { appearanceControls } from '@src/data';
 import { useAppearance } from '@src/hooks';
-import { AppearanceMode } from '@src/types';
+import { AppearanceControls, AppearanceMode } from '@src/types';
 
 export const AppearanceListGroup = () => {
-  const [mode, setMode] = useAppearance('system');
+  const [mode, setMode] = useAppearance(AppearanceMode.SYSTEM);
 
   const onModeSelected = (mode: AppearanceMode) => {
     setMode(mode);
@@ -13,37 +13,39 @@ export const AppearanceListGroup = () => {
 
   return (
     <ListGroup className="rounded-lg border border-gray-200 dark:border-gray-700">
-      {appearanceControls.map((item, index) => {
+      {Object.keys(appearanceControls).map((item, index) => {
+        const modeKey: keyof AppearanceControls = item as AppearanceMode;
+
         if (index === 0) {
           return (
             <AppearanceListGroupItem
-              key={item.mode}
+              key={modeKey}
               type="first"
-              mode={item.mode}
-              icon={item.icon}
-              active={mode === item.mode ? true : false}
-              onClick={() => onModeSelected(item.mode)}
+              mode={modeKey}
+              icon={appearanceControls[modeKey].icon}
+              active={mode === modeKey ? true : false}
+              onClick={() => onModeSelected(modeKey)}
             />
           );
-        } else if (index === appearanceControls.length - 1) {
+        } else if (index === Object.keys(appearanceControls).length - 1) {
           return (
             <AppearanceListGroupItem
-              key={item.mode}
+              key={modeKey}
               type="last"
-              mode={item.mode}
-              icon={item.icon}
-              active={mode === item.mode ? true : false}
-              onClick={() => onModeSelected(item.mode)}
+              mode={modeKey}
+              icon={appearanceControls[modeKey].icon}
+              active={mode === modeKey ? true : false}
+              onClick={() => onModeSelected(modeKey)}
             />
           );
         } else {
           return (
             <AppearanceListGroupItem
-              key={item.mode}
-              mode={item.mode}
-              icon={item.icon}
-              active={mode === item.mode ? true : false}
-              onClick={() => onModeSelected(item.mode)}
+              key={item}
+              mode={modeKey}
+              icon={appearanceControls[modeKey].icon}
+              active={mode === modeKey ? true : false}
+              onClick={() => onModeSelected(modeKey)}
             />
           );
         }
