@@ -1,15 +1,15 @@
-import { AppearanceListGroupItem } from '@src/components/AppearanceListGroup';
+import { AppearanceListGroupItem } from '@src/components/AppearanceControl';
 import { ListGroup } from '@src/components/ListGroup';
 import { appearanceControls } from '@src/data';
-import { useAppearance } from '@src/hooks';
 import { AppearanceControls, AppearanceMode } from '@src/types';
 
-export const AppearanceListGroup = () => {
-  const [mode, setMode] = useAppearance(AppearanceMode.SYSTEM);
+type Props = {
+  mode: AppearanceMode;
+  onModeSelected: (mode: AppearanceMode) => void;
+};
 
-  const onModeSelected = (mode: AppearanceMode) => {
-    setMode(mode);
-  };
+export const AppearanceListGroup = (props: Props) => {
+  const { mode, onModeSelected } = props;
 
   return (
     <ListGroup className="rounded-lg border border-gray-200 dark:border-gray-700">

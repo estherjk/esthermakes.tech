@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import { AppearanceListGroup } from '@src/components/AppearanceListGroup';
+import { AppearanceButton } from '@src/components/AppearanceControl';
 import { navbarLinks } from '@src/data';
 
 export const Navbar = () => {
@@ -42,7 +42,7 @@ export const Navbar = () => {
           </div>
 
           <div className="col-span-1 flex justify-end items-center">
-            <AppearanceListGroup />
+            <AppearanceButton />
           </div>
         </div>
       </div>
