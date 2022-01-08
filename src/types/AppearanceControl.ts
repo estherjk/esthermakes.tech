@@ -1,6 +1,6 @@
-export type ApperanceMode = 'light' | 'dark' | 'system';
+export type AppearanceMode = 'light' | 'dark' | 'system';
 
 export type AppearanceControl = {
-  mode: ApperanceMode;
+  mode: AppearanceMode;
   icon: string;
 };
