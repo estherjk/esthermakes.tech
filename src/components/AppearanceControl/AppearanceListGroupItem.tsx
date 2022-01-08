@@ -24,13 +24,9 @@ export const AppearanceListGroupItem = (props: Props) => {
   return (
     <ListGroupItem
       onClick={onClick}
-      className={
-        baseStyle +
-        ' ' +
-        (type == 'first' ? firstItemStyle : type === 'last' ? lastItemStyle : bottomBorderStyle) +
-        ' ' +
-        (active && activeStyle)
-      }>
+      className={`${baseStyle}
+        ${type == 'first' ? firstItemStyle : type === 'last' ? lastItemStyle : bottomBorderStyle}
+        ${active ? activeStyle : ''}`}>
       <span className="mr-4">
         <i className={icon} />
       </span>
