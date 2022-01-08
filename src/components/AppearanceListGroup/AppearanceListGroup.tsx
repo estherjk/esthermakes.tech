@@ -2,12 +2,12 @@ import { AppearanceListGroupItem } from '@src/components/AppearanceListGroup';
 import { ListGroup } from '@src/components/ListGroup';
 import { appearanceControls } from '@src/data';
 import { useAppearance } from '@src/hooks';
-import { ApperanceMode } from '@src/types';
+import { AppearanceMode } from '@src/types';
 
 export const AppearanceListGroup = () => {
   const [mode, setMode] = useAppearance('system');
 
-  const onModeSelected = (mode: ApperanceMode) => {
+  const onModeSelected = (mode: AppearanceMode) => {
     setMode(mode);
   };
 

@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
 import { useLocalStorage } from '@src/hooks';
-import { ApperanceMode } from '@src/types';
+import { AppearanceMode } from '@src/types';
 
-export const useAppearance = (defaultMode: ApperanceMode) => {
+export const useAppearance = (defaultMode: AppearanceMode) => {
   const KEY_APPEARANCE = 'mode';
   const preferDarkQuery = '(prefers-color-scheme: dark)';
 
