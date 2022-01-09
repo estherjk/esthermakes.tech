@@ -3,13 +3,11 @@ import { useState } from 'react';
 import { AppearanceListGroup } from '@src/components/AppearanceControl';
 import { appearanceControls } from '@src/data';
 import { useAppearance } from '@src/hooks';
-import { AppearanceControls, AppearanceMode } from '@src/types';
+import { AppearanceMode } from '@src/types';
 
 export const AppearanceButton = () => {
   const [mode, setMode] = useAppearance(AppearanceMode.SYSTEM);
   const [showListGroup, setShowListGroup] = useState(false);
-
-  const modeKey: keyof AppearanceControls = mode;
 
   const onClick = () => {
     setShowListGroup(!showListGroup);
@@ -28,8 +26,8 @@ export const AppearanceButton = () => {
         data-toggle="appearanceDropdown"
         className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800"
         onClick={onClick}>
-        {/* Check if `modeKey` is defined */}
-        <i className={modeKey && appearanceControls[modeKey].icon} />
+        {/* Check if `mode` is defined */}
+        <i className={mode && appearanceControls[mode].icon} />
       </button>
 
       <div
@@ -38,7 +36,7 @@ export const AppearanceButton = () => {
         className={`absolute top-full right-0 w-36 mt-2 z-50 ${
           showListGroup ? 'visible' : 'hidden'
         }`}>
-        <AppearanceListGroup mode={modeKey} onModeSelected={onModeSelected} />
+        <AppearanceListGroup mode={mode} onModeSelected={onModeSelected} />
       </div>
     </div>
   );
