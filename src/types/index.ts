@@ -1,3 +1,4 @@
+export * from './Appearance';
 export * from './NavbarLink';
 export * from './Post';
 export * from './Project';

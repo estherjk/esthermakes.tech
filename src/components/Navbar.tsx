@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { AppearanceButton } from '@src/components/AppearanceControl';
 import { navbarLinks } from '@src/data';
 
 export const Navbar = () => {
@@ -12,8 +13,8 @@ export const Navbar = () => {
         <Link key={index} href={link.url}>
           <a
             className={
-              'uppercase no-underline font-semibold hover:text-brand ' +
-              (router.pathname == link.url ? 'text-brand' : '')
+              'uppercase no-underline font-semibold hover:text-brand dark:hover:text-brand' +
+              (router.pathname == link.url ? ' text-brand dark:text-brand' : '')
             }>
             {link.title}
           </a>
@@ -38,6 +39,11 @@ export const Navbar = () => {
             <div className="w-full flex justify-start md:justify-center space-x-8">
               {renderNavbarLinks()}
             </div>
+          </div>
+
+          {/* Don't show on small screens */}
+          <div className="hidden md:col-span-1 md:flex justify-end items-center">
+            <AppearanceButton />
           </div>
         </div>
       </div>
