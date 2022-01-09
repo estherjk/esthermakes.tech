@@ -1,18 +1,34 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-import { useLocalStorage } from '@src/hooks';
-import { AppearanceMode, SetAppearanceMode } from '@src/types';
+import { useStorage } from '@src/hooks';
+import { AppearanceMode } from '@src/types';
 
 export const useAppearance = (defaultMode: AppearanceMode) => {
   const KEY_APPEARANCE = 'mode';
   const preferDarkQuery = '(prefers-color-scheme: dark)';
 
-  const [modeString, setModeString] = useLocalStorage(KEY_APPEARANCE, defaultMode);
+  const { getItem, setItem } = useStorage();
 
-  const mode = modeString as AppearanceMode;
-  const setMode = setModeString as SetAppearanceMode;
+  const [mode, _setMode] = useState<AppearanceMode>(() => {
+    const value = getItem(KEY_APPEARANCE, 'local');
 
+    if (value) {
+      return value as AppearanceMode;
+    } else {
+      return defaultMode;
+    }
+  });
+
+  // Perform side effect (i.e. save to localStorage, then set mode)
+  const setMode = (mode: AppearanceMode) => {
+    setItem(KEY_APPEARANCE, mode, 'local');
+    _setMode(mode);
+  };
+
+  // Update when system appearance changes
   useEffect(() => {
+    if (mode !== AppearanceMode.SYSTEM) return;
+
     const mediaQuery = window.matchMedia(preferDarkQuery);
     const handleChange = () => {
       if (mediaQuery.matches) {
@@ -24,10 +40,11 @@ export const useAppearance = (defaultMode: AppearanceMode) => {
 
     mediaQuery.addEventListener('change', handleChange);
     return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
+  }, [mode]);
 
   useEffect(() => {
     updateClassList(mode);
+    setMode(mode);
   }, [mode]);
 
   const updateClassList = (mode: AppearanceMode) => {
@@ -50,7 +67,7 @@ export const useAppearance = (defaultMode: AppearanceMode) => {
 
   // Explicitly set return types for our hook
   // Reference: https://kentcdodds.com/blog/wrapping-react-use-state-with-type-script
-  const returnValue: [AppearanceMode, SetAppearanceMode] = [mode, setMode];
+  const returnValue: [AppearanceMode, (mode: AppearanceMode) => void] = [mode, setMode];
 
   return returnValue;
 };
