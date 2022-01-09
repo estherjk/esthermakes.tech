@@ -28,7 +28,7 @@ export const useAppearance = (defaultMode: AppearanceMode) => {
 
   useEffect(() => {
     updateClassList(mode);
-  }, [mode, setModeString]);
+  }, [mode]);
 
   const updateClassList = (mode: AppearanceMode) => {
     switch (mode) {
