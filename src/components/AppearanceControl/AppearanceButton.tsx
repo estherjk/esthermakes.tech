@@ -19,8 +19,37 @@ export const AppearanceButton = () => {
     setShowListGroup(false);
   };
 
+  // Update icon when system appearance changes
+  // NOTE: Feels a bit like DRY here... (see `useAppearance`)
   useEffect(() => {
-    setIcon(appearanceControls[mode].icon);
+    if (mode !== AppearanceMode.SYSTEM) return;
+
+    const preferDarkQuery = '(prefers-color-scheme: dark)';
+    const mediaQuery = window.matchMedia(preferDarkQuery);
+    const handleChange = () => {
+      if (mediaQuery.matches) {
+        setIcon(appearanceControls[AppearanceMode.DARK].icon);
+      } else {
+        setIcon(appearanceControls[AppearanceMode.LIGHT].icon);
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, [mode]);
+
+  useEffect(() => {
+    if (mode === AppearanceMode.SYSTEM) {
+      const preferDarkQuery = '(prefers-color-scheme: dark)';
+      const mediaQuery = window.matchMedia(preferDarkQuery);
+      if (mediaQuery.matches) {
+        setIcon(appearanceControls[AppearanceMode.DARK].icon);
+      } else {
+        setIcon(appearanceControls[AppearanceMode.LIGHT].icon);
+      }
+    } else {
+      setIcon(appearanceControls[mode].icon);
+    }
   }, [mode]);
 
   return (
