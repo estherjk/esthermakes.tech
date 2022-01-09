@@ -12,7 +12,7 @@ export const AppearanceButton = () => {
   const modeKey: keyof AppearanceControls = mode;
 
   const onClick = () => {
-    setShowListGroup(true);
+    setShowListGroup(!showListGroup);
   };
 
   const onModeSelected = (mode: AppearanceMode) => {
