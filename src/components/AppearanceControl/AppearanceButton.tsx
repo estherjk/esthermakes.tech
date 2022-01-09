@@ -19,6 +19,17 @@ export const AppearanceButton = () => {
     setShowListGroup(false);
   };
 
+  useEffect(() => {
+    const handleWindowClick = () => {
+      setShowListGroup(false);
+    };
+
+    if (showListGroup) {
+      window.addEventListener('click', handleWindowClick);
+    }
+    return () => window.removeEventListener('click', handleWindowClick);
+  }, [showListGroup]);
+
   // Update icon when system appearance changes
   // NOTE: Feels a bit like DRY here... (see `useAppearance`)
   useEffect(() => {
