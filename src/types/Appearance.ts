@@ -9,5 +9,3 @@ export type Appearance = {
 };
 
 export type AppearanceControls = { [key in AppearanceMode]: Appearance };
-
-export type SetAppearanceMode = React.Dispatch<React.SetStateAction<AppearanceMode>>;

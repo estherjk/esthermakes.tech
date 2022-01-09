@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { AppearanceListGroup } from '@src/components/AppearanceControl';
 import { appearanceControls } from '@src/data';
@@ -8,6 +8,7 @@ import { AppearanceMode } from '@src/types';
 export const AppearanceButton = () => {
   const [mode, setMode] = useAppearance(AppearanceMode.SYSTEM);
   const [showListGroup, setShowListGroup] = useState(false);
+  const [icon, setIcon] = useState('');
 
   const onClick = () => {
     setShowListGroup(!showListGroup);
@@ -18,6 +19,10 @@ export const AppearanceButton = () => {
     setShowListGroup(false);
   };
 
+  useEffect(() => {
+    setIcon(appearanceControls[mode].icon);
+  }, [mode]);
+
   return (
     <div className="relative">
       <button
@@ -26,8 +31,7 @@ export const AppearanceButton = () => {
         data-toggle="appearanceDropdown"
         className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800"
         onClick={onClick}>
-        {/* Check if `mode` is defined */}
-        <i className={mode && appearanceControls[mode].icon} />
+        <i className={icon} />
       </button>
 
       <div
