@@ -13,8 +13,8 @@ export const Navbar = () => {
         <Link key={index} href={link.url}>
           <a
             className={
-              'uppercase no-underline font-semibold hover:text-brand dark:hover:text-brand' +
-              (router.pathname == link.url ? ' text-brand dark:text-brand' : '')
+              'uppercase no-underline font-semibold hover:text-red-500 dark:hover:text-red-400' +
+              (router.pathname == link.url ? ' text-red-500 dark:text-red-400' : '')
             }>
             {link.title}
           </a>
@@ -30,7 +30,7 @@ export const Navbar = () => {
           <div className="col-span-1 flex justify-start items-center">
             <Link href="/">
               <a>
-                <img src="/icons/icon-logo.svg" className="w-8 h-8" />
+                <img src="/icons/icon-logo.svg" alt="Logo" className="w-8 h-8" />
               </a>
             </Link>
           </div>

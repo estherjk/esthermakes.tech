@@ -20,7 +20,7 @@ export const AppearanceListGroupItem = (props: Props) => {
   const bottomBorderStyle = 'border-b border-gray-200 dark:border-gray-700';
   const firstItemStyle = 'rounded-t-lg' + ' ' + bottomBorderStyle;
   const lastItemStyle = 'rounded-b-lg';
-  const activeStyle = 'text-black dark:text-white font-medium';
+  const activeStyle = 'text-red-500 dark:text-red-400 font-medium';
 
   const [style, setStyle] = useState(baseStyle);
 
