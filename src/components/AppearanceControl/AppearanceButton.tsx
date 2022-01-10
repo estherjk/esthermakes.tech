@@ -68,6 +68,7 @@ export const AppearanceButton = () => {
       <button
         type="button"
         id="appearanceButton"
+        aria-label="Appearance button"
         data-toggle="appearanceDropdown"
         className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800"
         onClick={onClick}>
