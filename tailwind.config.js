@@ -9,7 +9,6 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      brand: '#E31B1B',
       black: '#171717',
       white: '#FFFFFF',
       gray: {
@@ -24,6 +23,18 @@ module.exports = {
         700: '#404040',
         800: '#262626',
         900: '#171717',
+      },
+      red: {
+        50: '#FEE6EA',
+        100: '#FCBBC3',
+        200: '#F8919B',
+        300: '#F26871',
+        400: '#EB4146',
+        500: '#E31B1B',
+        600: '#C21919',
+        700: '#A11717',
+        800: '#811414',
+        900: '#621111',
       },
     },
     extend: {},
