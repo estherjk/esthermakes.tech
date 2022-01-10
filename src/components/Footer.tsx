@@ -4,8 +4,9 @@ export const Footer = () => {
   const renderSocialLinks = () => {
     return socialLinks.map((link, index) => {
       return (
-        <a key={index} href={link.url} target="_blank" rel="noreferrer">
+        <a key={index} href={link.url} title={link.title} target="_blank" rel="noreferrer">
           <i className={link.icon} />
+          <span className="sr-only">{link.title}</span>
         </a>
       );
     });
