@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
-      mono: ['"Fira Code"', 'monospace'],
+      mono: ['Consolas', 'Monaco', '"Andale Mono"', '"Ubuntu Mono"', 'monospace'],
     },
     colors: {
       transparent: 'transparent',
