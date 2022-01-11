@@ -9,13 +9,13 @@ export const Navbar = () => {
 
   const renderNavbarLinks = () => {
     return navbarLinks.map((link, index) => {
+      const baseStyle =
+        'uppercase no-underline font-semibold hover:text-red-500 dark:hover:text-red-400';
+      const activeStyle = 'text-red-500 dark:text-red-400';
+
       return (
         <Link key={index} href={link.url}>
-          <a
-            className={
-              'uppercase no-underline font-semibold hover:text-red-500 dark:hover:text-red-400' +
-              (router.pathname == link.url ? ' text-red-500 dark:text-red-400' : '')
-            }>
+          <a className={`${baseStyle} ${router.pathname == link.url ? activeStyle : ''}`}>
             {link.title}
           </a>
         </Link>
