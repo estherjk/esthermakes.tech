@@ -14,8 +14,8 @@ const AboutPage = () => {
           </p>
           <p>
             I love learning, and I have a wide variety of interests that range from web, mobile, AI,
-            and IoT. It's essential for me to learn by doing, as well to document what I've learned.
-            That's how I got started in creating personal projects on{' '}
+            and IoT. It's essential for me to learn by doing, as well as to document what I've
+            learned. That's how I got started in creating personal projects on{' '}
             <a href="https://github.com/estherjk" target="_blank" rel="noreferrer">
               GitHub
             </a>
