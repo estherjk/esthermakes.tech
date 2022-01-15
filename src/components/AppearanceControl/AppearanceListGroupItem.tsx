@@ -18,7 +18,7 @@ export const AppearanceListGroupItem = (props: Props) => {
 
   const baseStyle = 'w-full px-4 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-800';
   const bottomBorderStyle = 'border-b border-gray-200 dark:border-gray-700';
-  const firstItemStyle = 'rounded-t-lg' + ' ' + bottomBorderStyle;
+  const firstItemStyle = `rounded-t-lg ${bottomBorderStyle}`;
   const lastItemStyle = 'rounded-b-lg';
   const activeStyle = 'text-red-500 dark:text-red-400 font-medium';
 
