@@ -33,7 +33,9 @@ find * -name 'edison.env'
 
 In my case, the file was originally located at:
 
-    edison-src/device-software/meta-edison-distro/recipes-bsp/u-boot/files/
+```bash
+edison-src/device-software/meta-edison-distro/recipes-bsp/u-boot/files/
+```
 
 As of February 2015, it is now located at:
 
