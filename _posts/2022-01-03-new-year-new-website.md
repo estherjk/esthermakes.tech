@@ -25,7 +25,7 @@ The biggest advantage at the time was how quickly I could get blog posts created
 
 ## In with the new...
 
-Over the last year, [Next.js](https://nextjs.org/), [TypeScript](https://www:.typescriptlang.org/), & [Vercel](https://vercel.com/) have been part of my professional web development workflow. So, I was eager to use them as the building blocks for the next iteration of this website.
+Over the last year, [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), & [Vercel](https://vercel.com/) have been part of my professional web development workflow. So, I was eager to use them as the building blocks for the next iteration of this website.
 
 For styling, I opted for [Tailwind](https://tailwindcss.com/), which is a utility-first framework. It provides a lot of helper CSS classes that are easy to put together to build out custom components. It also makes it very easy to support light & dark mode.
 
@@ -38,7 +38,7 @@ For styling, I opted for [Tailwind](https://tailwindcss.com/), which is a utilit
 In summary, here's a list of the new tech stack components:
 
 * [Next.js](https://nextjs.org/): "The [React](https://reactjs.org/) framework for production"
-* [TypeScript](https://www:typescriptlang.org/): Types for JavaScript
+* [TypeScript](https://www.typescriptlang.org/): Types for JavaScript
 * [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework
 * [React Markdown](https://github.com/remarkjs/react-markdown): For rendering markdown content (i.e. the blog posts)
 * [Vercel](https://vercel.com/): For making web deployments easy
