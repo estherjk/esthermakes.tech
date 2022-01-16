@@ -26,7 +26,7 @@ const BlogPage = (props: Props) => {
               <tr key={post.slug} className="border-b border-gray-200 dark:border-gray-700">
                 <td className="py-4 text-left">
                   <Link href={`/blog/${post.slug}`}>
-                    <a className="no-underline">{post.title}</a>
+                    <a className="no-underline hover:underline hover:decoration-1">{post.title}</a>
                   </Link>
                 </td>
                 <td className="py-4 text-right">
