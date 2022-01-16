@@ -18,13 +18,13 @@ export const CodeBlock = (props: Props) => {
   const match = /language-(\w+)/.exec(className || '');
 
   return !inline && match ? (
-    <div className="my-8">
+    <div className="tracking-normal text-sm my-8">
       <SyntaxHighlighter style={dracula} language={match[1]}>
         {children}
       </SyntaxHighlighter>
     </div>
   ) : (
-    <code className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 break-words p-1 rounded">
+    <code className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 tracking-normal text-sm break-words px-1.5 py-0.5 rounded-md">
       {children}
     </code>
   );
