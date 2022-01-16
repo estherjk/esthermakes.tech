@@ -37,10 +37,10 @@
 
   a {
     @apply text-black dark:text-white
-      font-medium underline;
+      font-medium underline underline-offset-1;
   }
 
   a:hover {
-    @apply text-gray-500 dark:text-gray-400;
+    @apply decoration-2;
   }
 }
