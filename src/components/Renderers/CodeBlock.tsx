@@ -24,7 +24,7 @@ export const CodeBlock = (props: Props) => {
       </SyntaxHighlighter>
     </div>
   ) : (
-    <code className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 tracking-normal text-sm break-words px-1.5 py-0.5 rounded-md">
+    <code className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 tracking-normal text-[85%] break-words px-1.5 py-0.5 rounded-md">
       {children}
     </code>
   );
