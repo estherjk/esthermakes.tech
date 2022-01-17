@@ -8,7 +8,7 @@ export const Footer = () => {
           key={index}
           href={link.url}
           title={link.title}
-          className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
+          className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
           target="_blank"
           rel="noreferrer">
           <i className={link.icon} />
@@ -23,7 +23,7 @@ export const Footer = () => {
       <div className="px-4 md:px-8">
         <div className="grid grid-cols-6 gap-4 my-6">
           <div className="md:col-span-2 md:flex md:justify-start items-center hidden">
-            <span className="text-sm text-gray-600 dark:text-gray-300">© 2022 Esther Jun Kim</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400">© 2022 Esther Jun Kim</span>
           </div>
 
           <div className="md:col-span-2 col-span-6 flex justify-center items-center">
@@ -33,7 +33,7 @@ export const Footer = () => {
           <div className="md:col-span-2 md:flex md:justify-end items-center hidden">
             <a
               href="https://github.com/estherjk/esthermakes.tech/blob/main/LICENSE"
-              className="text-sm text-gray-600 dark:text-gray-300"
+              className="text-sm text-gray-500 dark:text-gray-400"
               target="_blank"
               rel="noreferrer">
               License
