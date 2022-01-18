@@ -24,28 +24,19 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="w-full">
-      <div className="px-4 md:px-8">
-        <div className="grid grid-cols-6 gap-4 my-6">
-          <div className="col-span-1 flex justify-start items-center">
-            <Link href="/">
-              <a>
-                <img src="/icons/icon-logo.svg" alt="Logo" className="w-8 h-8" />
-              </a>
-            </Link>
-          </div>
+    <header className="flex w-full px-4 md:px-8 my-6">
+      <Link href="/">
+        <a>
+          <img src="/icons/icon-logo.svg" alt="Logo" className="max-w-none w-8 h-8" />
+        </a>
+      </Link>
 
-          <div className="col-span-5 md:col-span-4 flex items-center">
-            <div className="w-full flex justify-start md:justify-center space-x-8">
-              {renderNavbarLinks()}
-            </div>
-          </div>
+      <div className="flex flex-grow items-center">
+        <nav className="flex w-full justify-center space-x-8">{renderNavbarLinks()}</nav>
+      </div>
 
-          {/* Don't show on small screens */}
-          <div className="hidden md:col-span-1 md:flex justify-end items-center">
-            <AppearanceButton />
-          </div>
-        </div>
+      <div className="flex ml-auto items-center">
+        <AppearanceButton />
       </div>
     </header>
   );
