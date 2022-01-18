@@ -4,16 +4,17 @@ export const Footer = () => {
   const renderSocialLinks = () => {
     return socialLinks.map((link, index) => {
       return (
-        <a
-          key={index}
-          href={link.url}
-          title={link.title}
-          className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
-          target="_blank"
-          rel="noreferrer">
-          <i className={link.icon} />
-          <span className="sr-only">{link.title}</span>
-        </a>
+        <li key={index}>
+          <a
+            href={link.url}
+            title={link.title}
+            className="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white"
+            target="_blank"
+            rel="noreferrer">
+            <i className={link.icon} />
+            <span className="sr-only">{link.title}</span>
+          </a>
+        </li>
       );
     });
   };
@@ -26,7 +27,7 @@ export const Footer = () => {
         </div>
 
         <div className="md:col-span-2 col-span-6 flex justify-center items-center">
-          <div className="flex space-x-8">{renderSocialLinks()}</div>
+          <ul className="inline-flex space-x-8">{renderSocialLinks()}</ul>
         </div>
 
         <div className="md:col-span-2 md:flex md:justify-end items-center hidden">
