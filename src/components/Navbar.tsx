@@ -14,11 +14,13 @@ export const Navbar = () => {
       const activeStyle = 'text-red-500 dark:text-red-400';
 
       return (
-        <Link key={index} href={link.url}>
-          <a className={`${baseStyle} ${router.pathname == link.url ? activeStyle : ''}`}>
-            {link.title}
-          </a>
-        </Link>
+        <li key={index}>
+          <Link href={link.url}>
+            <a className={`${baseStyle} ${router.pathname == link.url ? activeStyle : ''}`}>
+              {link.title}
+            </a>
+          </Link>
+        </li>
       );
     });
   };
@@ -32,7 +34,9 @@ export const Navbar = () => {
       </Link>
 
       <div className="flex flex-grow items-center">
-        <nav className="flex w-full justify-center space-x-8">{renderNavbarLinks()}</nav>
+        <nav className="flex w-full justify-center">
+          <ul className="inline-flex space-x-8">{renderNavbarLinks()}</ul>
+        </nav>
       </div>
 
       <div className="flex ml-auto items-center">
