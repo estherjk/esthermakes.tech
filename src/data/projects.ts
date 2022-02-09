@@ -47,7 +47,7 @@ export const projects: Project[] = [
     title: 'Frogger',
     image: '/images/projects/frogger.jpg',
     description: "My final project for Udacity's Object-Oriented JavaScript class",
-    url: 'https://estherjk.github.io/frogger/',
+    url: 'https://github.com/estherjk/frogger',
     dateUpdated: '2020-04-22',
   },
   {
