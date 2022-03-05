@@ -44,6 +44,7 @@ export const BaseLayout = (props: Props) => {
         <link rel="logo-circle-precomposed" sizes="180x180" href="/logo/logo-circle-180x180.png" />
 
         {/* Font Awesome */}
+        {/* FIXME: Icons don't load in development mode. It's not an issue when running in production mode or when deployed on Vercel.  */}
         <script src="https://kit.fontawesome.com/eb8fc98c33.js" crossOrigin="anonymous"></script>
 
         {/* Google Analytics */}
