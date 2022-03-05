@@ -43,13 +43,6 @@ export const BaseLayout = (props: Props) => {
         <link rel="logo-circle-precomposed" sizes="167x167" href="/logo/logo-circle-167x167.png" />
         <link rel="logo-circle-precomposed" sizes="180x180" href="/logo/logo-circle-180x180.png" />
 
-        {/* Font Awesome */}
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-          crossOrigin="anonymous"></link>
-
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQ3KH6PLYF"></script>
         <script
