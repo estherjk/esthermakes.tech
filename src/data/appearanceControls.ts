@@ -3,12 +3,12 @@ import { AppearanceControls, AppearanceMode } from '@src/types';
 // Reference: https://stackoverflow.com/a/57312014
 export const appearanceControls: AppearanceControls = {
   [AppearanceMode.LIGHT]: {
-    icon: 'far fa-sun',
+    icon: 'fa-regular fa-sun-bright',
   },
   [AppearanceMode.DARK]: {
-    icon: 'far fa-moon',
+    icon: 'fa-regular fa-moon',
   },
   [AppearanceMode.SYSTEM]: {
-    icon: 'fas fa-desktop',
+    icon: 'fa-regular fa-display',
   },
 };
