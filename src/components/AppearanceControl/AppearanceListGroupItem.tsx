@@ -34,7 +34,7 @@ export const AppearanceListGroupItem = (props: Props) => {
   return (
     <ListGroupItem onClick={onClick} className={style}>
       <span className="mr-4">
-        <i className={icon} />
+        <i className={`w-4 ${icon}`} />
       </span>
       <span className="capitalize">{mode}</span>
     </ListGroupItem>
