@@ -26,9 +26,4 @@ export const socialLinks: SocialMedia[] = [
     url: 'https://www.linkedin.com/in/estherjunkim',
     icon: 'fa-brands fa-linkedin-in',
   },
-  {
-    title: 'Google Scholar',
-    url: 'https://scholar.google.com/citations?hl=en&user=QfQuFmgAAAAJ',
-    icon: 'fa-solid fa-graduation-cap',
-  },
 ];
