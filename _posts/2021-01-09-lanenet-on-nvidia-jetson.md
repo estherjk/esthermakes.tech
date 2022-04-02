@@ -57,4 +57,4 @@ You can check out [this video](https://www.instagram.com/p/CG7fdYcjBsK/?utm_sour
 
 ## Conclusion
 
-With a little bit of work to convert a TensorFlow model to TensorRT, we can now run real-time lane detection the NVIDIA Jetson Xavier NX. Next steps are to try this on the entry-level Nano.
+With a little bit of work to convert a TensorFlow model to TensorRT, we can now run real-time lane detection on the NVIDIA Jetson Xavier NX. Next steps are to try this on the entry-level Nano.
