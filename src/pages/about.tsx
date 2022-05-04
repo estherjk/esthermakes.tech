@@ -5,7 +5,7 @@ const AboutPage = () => {
   const renderIntro = () => {
     return (
       <div className="md:flex md:justify-between">
-        <img src="/images/headshot.jpg" alt="Headshot" className="rounded-lg w-fit sm:w-64" />
+        <img src="/images/headshot.jpg" alt="Headshot" className="rounded-lg w-fit sm:w-80" />
         <div className="mt-4 md:mt-0 md:ml-4">
           <p>Hi, I'm Esther Jun Kim.</p>
           <p>
