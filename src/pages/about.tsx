@@ -22,11 +22,8 @@ const AboutPage = () => {
             .
           </p>
           <p>
-            My favorite hobby is reading. Check out my{' '}
-            <a href="https://trello.com/b/mgqBN7ZV" target="_blank" rel="noreferrer">
-              Trello board
-            </a>{' '}
-            with books that I have finished or queued up.
+            Other passions of mine are books and coffee... especially together.{' '}
+            <i className="fa-solid fa-books" /> <i className="fa-solid fa-mug-hot" />
           </p>
         </div>
       </div>
