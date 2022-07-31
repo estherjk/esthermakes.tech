@@ -5,7 +5,11 @@ const AboutPage = () => {
   const renderIntro = () => {
     return (
       <div className="md:flex md:justify-between">
-        <img src="/images/headshot.jpg" alt="Headshot" className="rounded-lg w-80" />
+        <img
+          src="/images/avatar.png"
+          alt="Avatar"
+          className="rounded-full border-2 border-gray-200 dark:border-gray-700 w-52 h-52"
+        />
         <div className="mt-4 md:mt-0 md:ml-4">
           <p>Hi, I'm Esther Jun Kim.</p>
           <p>
@@ -31,7 +35,7 @@ const AboutPage = () => {
   };
 
   return (
-    <BaseLayout title="About" image="/images/headshot.jpg">
+    <BaseLayout title="About" image="/images/avatar.png">
       <div className="w-full max-w-4xl mx-auto">
         <div className="mb-8">
           <Title>About Me</Title>
