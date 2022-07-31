@@ -4,11 +4,11 @@ import { BaseLayout } from '@src/layouts';
 const AboutPage = () => {
   const renderIntro = () => {
     return (
-      <div className="md:flex md:justify-between">
+      <div className="flex flex-col md:flex-row">
         <img
           src="/images/avatar.png"
           alt="Avatar"
-          className="rounded-full border-2 border-gray-200 dark:border-gray-700 w-52 h-52"
+          className="rounded-full border-2 border-gray-200 dark:border-gray-700 w-52 h-52 mx-auto"
         />
         <div className="mt-4 md:mt-0 md:ml-4">
           <p>Hi, I'm Esther Jun Kim.</p>
