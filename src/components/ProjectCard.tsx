@@ -11,7 +11,7 @@ export const ProjectCard = (props: Props) => {
       <a
         href={url}
         target="_blank"
-        className="flex-1 bg-gray-100 dark:bg-gray-800 rounded overflow-hidden hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-500 no-underline"
+        className="flex-1 rounded border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 overflow-hidden hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-500 no-underline"
         rel="noreferrer">
         <img className="w-full" src={image} alt={description} />
 
