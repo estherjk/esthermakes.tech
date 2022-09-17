@@ -30,7 +30,7 @@ export const Navbar = () => {
       <Link href="/">
         <a>
           <img
-            src="/icons/icon-logo.svg"
+            src="/logo/logo-avatar-196x196.png"
             alt="Logo"
             className="max-w-none w-8 h-8 rounded-full border border-gray-200 dark:border-gray-700"
           />
