@@ -29,7 +29,11 @@ export const Navbar = () => {
     <header className="flex w-full px-4 md:px-8 my-6">
       <Link href="/">
         <a>
-          <img src="/icons/icon-logo.svg" alt="Logo" className="max-w-none w-8 h-8" />
+          <img
+            src="/logo/logo-avatar-196x196.png"
+            alt="Logo"
+            className="max-w-none w-8 h-8 rounded-full border border-gray-200 dark:border-gray-700"
+          />
         </a>
       </Link>
 
