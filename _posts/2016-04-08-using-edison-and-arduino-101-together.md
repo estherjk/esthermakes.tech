@@ -1,7 +1,7 @@
 ---
 title: Using Edison and Arduino 101 together
 dateCreated: '2016-04-08'
-image: '/images/edison-arduino101-iot-conceptual.png'
+image: '/images/edison/edison-arduino101-iot-conceptual.png'
 ---
 
 ## Introduction
@@ -12,7 +12,7 @@ For my first project with Arduino 101, I wanted to combine it with Edison. The t
 
 Hopefully, this sounds vaguely familiar&mdash;what I've described is the Internet of Things (IoT).
 
-![Conceptual IoT diagram with Edison and Arduino 101](/images/edison-arduino101-iot-conceptual.png)
+![Conceptual IoT diagram with Edison and Arduino 101](/images/edison/edison-arduino101-iot-conceptual.png)
 
 ## How the demo works
 
@@ -20,7 +20,7 @@ My demo illustrates a simple IoT example by displaying an Arduino 101's IMU (acc
 
 Here's a picture that illustrates the demo's archiecture:
 
-![Demo archiecture diagram](/images/edison-arduino101-iot.png)
+![Demo archiecture diagram](/images/edison/edison-arduino101-iot.png)
 
 ### BLE on Arduino 101
 
@@ -34,7 +34,7 @@ To read the data on Edison from Arduino 101, I used [noble](https://github.com/s
 
 The web server&mdash;which also uses Node.js and [socket.io](http://socket.io/)&mdash;is responsible for receiving data from Edison. From here, the web server can do advanced processing and analytics... but for this demo, it hosts a web page that displays the IMU data. Note that the web page is also a socket.io client&mdash;like Edison&mdash;but instead of sending data to the web server, its receiving and displaying the data.
 
-![Screenshot of the web client](/images/edison-arduino101-iot-web-client.png)
+![Screenshot of the web client](/images/edison/edison-arduino101-iot-web-client.png)
 
 ### Putting it all together
 

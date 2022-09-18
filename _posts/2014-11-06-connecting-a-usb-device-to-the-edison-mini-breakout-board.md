@@ -18,7 +18,7 @@ These are the supplies you will need:
 
 ## Supplying power to the Mini breakout board
 
-![Edison on Mini breakout board](/images/edison-mini-board-on-table.jpg)
+![Edison on Mini breakout board](/images/edison/edison-mini-board-on-table.jpg)
 
 There are four primary ways to supply power to Edison using the Mini breakout board (more info can be found [here](https://communities.intel.com/docs/DOC-23252)):
 
@@ -29,7 +29,7 @@ There are four primary ways to supply power to Edison using the Mini breakout bo
 
 In order to use Edison as a USB host, power must be supplied externally using either J21 or J22. If you supply power with a battery on J2, it will not power the USB connector. So, let's connect a 9V battery to J21:
 
-![9V battery connected to the Edison Mini breakout board](/images/edison-mini-9v.jpg)
+![9V battery connected to the Edison Mini breakout board](/images/edison/edison-mini-9v.jpg)
 
 Make sure that the red wire is connected to the left pin and the black wire is connected to the right pin (ground). The board lights should now turn on!
 
@@ -37,7 +37,7 @@ Make sure that the red wire is connected to the left pin and the black wire is c
 
 Attach the Micro USB OTG to USB adapter to J16 and connect the USB device (I am using a webcam in this example):
 
-![9V battery and webcam connected to the Edison Mini breakout board](/images/edison-mini-9v-webcam.jpg)
+![9V battery and webcam connected to the Edison Mini breakout board](/images/edison/edison-mini-9v-webcam.jpg)
 
 Let's check if the USB device is detected. First, SSH into Edison:
 
