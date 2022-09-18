@@ -17,6 +17,7 @@ export const BaseLayout = (props: Props) => {
 
         {/* Open Graph */}
         <meta content={title} property="og:title" key="og:title" />
+        <meta name="description" content="Hi, I'm Esther Jun Kim. I like to make things." />
         <meta content="https://esthermakes.tech" property="og:url" key="og:url" />
         <meta content={`https://esthermakes.tech${image}`} property="og:image" key="og:image" />
 
