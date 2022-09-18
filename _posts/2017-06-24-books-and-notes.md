@@ -1,7 +1,7 @@
 ---
 title: Books and notes
 dateCreated: '2017-06-24'
-image: '/images/books-and-notes-non-fiction.png'
+image: '/images/books-and-notes/non-fiction.png'
 ---
 
 ## Introduction
@@ -12,7 +12,7 @@ Reading is one of the best ways to learn. But, if you're like me and don't have 
 
 When it comes to reading non-fiction books, especially technology, design, or business books, I like to take notes while I read. Since I switched to digital books a few years ago, I've relied heavily on using the split-screen feature of my iPad: the left side contains my e-book and the right side contains my notes:
 
-![Taking notes when reading non-fiction](/images/books-and-notes-non-fiction.png)
+![Taking notes when reading non-fiction](/images/books-and-notes/non-fiction.png)
 
 When something piques my interest, I'll jot it down. It might be a direct quote, a one-line summary of what I've read, or an observation. Whatever it is, I'll write it down and list them as bullet points. When several items are related, I'll then group them together. And, I'll go through this pattern of listing and grouping several times. I've found this process very helpful in reinforcing what I've read. And by having digital notes, they're now instantly searchable in the event I want to go back and look through my notes.
 
@@ -20,7 +20,7 @@ When something piques my interest, I'll jot it down. It might be a direct quote,
 
 When it comes to reading fiction, I normally like to stay in the moment and just read. I'll occasionally highlight something if it's of interest to me, but primarily, I just want to enjoy the novel. Once I'm finished, I'll then write a summary of what I've read... similar to your grade school book reports... only this time, I'm not doing it begrudgingly or for earning a grade. :)
 
-![Taking notes when reading fiction](/images/books-and-notes-fiction.png)
+![Taking notes when reading fiction](/images/books-and-notes/fiction.png)
 
 I find that this process of summarizing helps me recall the plot, key themes, and important characters. However, my intent is not to have a massive summary that can be used as CliffsNotes. My goal is to succinctly summarize the story in my own words. I try to spend no more than 30 minutes doing this. And again, I have a digital version that's instantly searchable.
 
