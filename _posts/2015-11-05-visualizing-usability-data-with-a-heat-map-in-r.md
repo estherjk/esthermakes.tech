@@ -30,7 +30,7 @@ Task A,Task B,Task C,Task D,Task E
 
 This is a great start. But, visualizing the information can provide clearer insights. A heat map is a great way to enhance the table by adding color to the table of values:
 
-![Heat map](/images/uxr-heatmap.png)
+![Heat map](/images/uxr-heatmap/uxr-heatmap.png)
 
 The color scale used in this example goes from dark orange to light gray. If none of the users successfully complete a task, the color is dark orange; if all of the users successfully complete a task, the color is light gray. By color coding the data in this manner, we can immediately see potential problems... the darker the orange, the more we ought to pay attention to it. So, Tasks A and E are on our radar.
 
@@ -135,16 +135,16 @@ ggsave(filename='heatmap.png', width=6, height=3)
 The following pictures show what's happening at each step.
 
 Create heat map:
-![1. Create heat map](/images/uxr-heatmap-step1.png)
+![1. Create heat map](/images/uxr-heatmap/uxr-heatmap-step1.png)
 
 Add text:
-![2. Add text](/images/uxr-heatmap-step2.png)
+![2. Add text](/images/uxr-heatmap/uxr-heatmap-step2.png)
 
 Re-size the plot:
-![3. Re-size the plot](/images/uxr-heatmap-step3.png)
+![3. Re-size the plot](/images/uxr-heatmap/uxr-heatmap-step3.png)
 
 Give finishing touches:
-![4. Give finishing touches](/images/uxr-heatmap.png)
+![4. Give finishing touches](/images/uxr-heatmap/uxr-heatmap.png)
 
 There's our final plot. We can then save it!
 
