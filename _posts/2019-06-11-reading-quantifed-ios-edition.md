@@ -22,7 +22,7 @@ The app also attempts to use software design best practices for Swift. (The keyw
 
 Here's a high-level diagram that illustrates the architecture:
 
-![Reading Quantified iOS App Architecture](/images/reading-quantified-ios-architecture.png)
+![Reading Quantified iOS App Architecture](/images/reading-quantified/reading-quantified-ios-architecture.png)
 
 ## Next steps
 
