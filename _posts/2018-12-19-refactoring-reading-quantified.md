@@ -1,18 +1,18 @@
 ---
 title: Refactoring Reading Quantified
 dateCreated: '2018-12-19'
-image: '/images/reading-quantified-v3.0.0.png'
+image: '/images/reading-quantified/reading-quantified-v3.0.0.png'
 ---
 
 ## Introducing Reading Quantified v3.0
 
 Goodbye, custom UI. Hello, [Metabase](https://www.metabase.com/)!
 
-![Reading Quantified v.2.2.1](/images/reading-quantified-v2.2.1.png)
+![Reading Quantified v.2.2.1](/images/reading-quantified/reading-quantified-v2.2.1.png)
 
 And here's a snapshot of what it looks like now:
 
-![Reading Quantified v3.0.0](/images/reading-quantified-v3.0.0.png)
+![Reading Quantified v3.0.0](/images/reading-quantified/reading-quantified-v3.0.0.png)
 
 The 3rd iteration of Reading Quantified is a complete overhaul, from the backend to the frontend. The backend used to be powered by Node.js & Parse; it has been replaced with [Django](https://github.com/estherjk/reading-quantified-server). A new [Python client](https://github.com/estherjk/reading-quantified-trello) has also been created that retrieves cards from Trello & stores them in the Django server.
 
@@ -24,7 +24,7 @@ The repos are all available on GitHub:
 
 And here's how the different components work together:
 
-![An overview of the Reading Quantified Architecture](/images/reading-quantified-architecture-overview.png)
+![An overview of the Reading Quantified Architecture](/images/reading-quantified/reading-quantified-architecture-overview.png)
 
 ## Why the change?
 
