@@ -9,7 +9,7 @@ After 7 years on GitHub Pages, it's time for a change! The tech stack for this w
 
 ## Out with the old...
 
-![Previous website on GitHub Pages](/images/website-github-pages.png)
+![Previous website on GitHub Pages](/images/new-website/github-pages.png)
 
 The previous version of this site was hosted on GitHub Pages & used the following tech stack:
 
@@ -29,9 +29,9 @@ Over the last year, [Next.js](https://nextjs.org/), [TypeScript](https://www.typ
 
 For styling, I opted for [Tailwind](https://tailwindcss.com/), which is a utility-first framework. It provides a lot of helper CSS classes that are easy to put together to build out custom components. It also makes it very easy to support light & dark mode.
 
-![New website in light mode](/images/new-website-light-mode.png)
+![New website in light mode](/images/new-website/light-mode.png)
 
-![New website in dark mode](/images/new-website-dark-mode.png)
+![New website in dark mode](/images/new-website/dark-mode.png)
 
 [React Markdown](https://github.com/remarkjs/react-markdown) is used to render the blog posts. This was the most challenging part of the migration. The original Markdown files also included raw HTML, which I'd like to avoid moving forward. So, there was some manual labor involved to sanitize the posts. Besides raw HTML, all other content have been preserved.
 
