@@ -18,6 +18,10 @@ const BlogPage = (props: Props) => {
       <div className="w-full max-w-4xl mx-auto">
         <div className="mb-8">
           <Title>Blog Posts</Title>
+          <p>
+            Writing helps me organize my thoughts. Here, you can find a mix of technical write-ups,
+            personal reflections, and more.
+          </p>
         </div>
 
         <table className="min-w-full">
