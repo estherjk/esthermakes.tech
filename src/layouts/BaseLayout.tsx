@@ -22,7 +22,7 @@ export const BaseLayout = (props: Props) => {
         <meta content={`https://esthermakes.tech${image}`} property="og:image" key="og:image" />
 
         {/* Twitter Cards */}
-        <meta name="twitter:card" content="summary" key="twitter:card" />
+        <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
         <meta property="twitter:title" content={title} key="twitter:title" />
         <meta
           property="twitter:image"
