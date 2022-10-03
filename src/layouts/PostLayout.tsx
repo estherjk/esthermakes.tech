@@ -24,7 +24,7 @@ const PostLayout = (props: Props) => {
   const { post } = props;
 
   return (
-    <BaseLayout title={post.title} image={post.image}>
+    <BaseLayout title={post.title} description={post.description} image={post.image}>
       <div className="w-full max-w-4xl mx-auto">
         <div className="border-b mb-8">
           <Title className="mb-2">{post.title}</Title>
