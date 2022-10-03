@@ -4,12 +4,18 @@ import { Footer, Navbar } from '@src/components';
 
 type Props = {
   title?: string;
+  description?: string;
   image?: string;
   children: React.ReactNode;
 };
 
 export const BaseLayout = (props: Props) => {
-  const { title, image = '/images/og-default.png', children } = props;
+  const {
+    title,
+    description = "Hi, I'm Esther Jun Kim. I like to make things.",
+    image = '/images/og-default.png',
+    children,
+  } = props;
   return (
     <>
       <Head>
@@ -17,7 +23,7 @@ export const BaseLayout = (props: Props) => {
 
         {/* Open Graph */}
         <meta content={title} property="og:title" key="og:title" />
-        <meta name="description" content="Hi, I'm Esther Jun Kim. I like to make things." />
+        <meta name="description" content={description} />
         <meta content="https://esthermakes.tech" property="og:url" key="og:url" />
         <meta content={`https://esthermakes.tech${image}`} property="og:image" key="og:image" />
 
