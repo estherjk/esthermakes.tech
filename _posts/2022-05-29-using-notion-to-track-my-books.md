@@ -1,5 +1,6 @@
 ---
 title: Using Notion to track my books
+description: Notion is a document organizing tool that has really enabled me to centralize all my books information in one place.
 dateCreated: '2022-05-29'
 image: '/images/bookshelf-notion/gallery.png'
 ---
