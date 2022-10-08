@@ -43,4 +43,8 @@
   a:hover {
     @apply decoration-2;
   }
+
+  b, strong {
+    @apply font-semibold;
+  }
 }
