@@ -16,6 +16,9 @@ export const BaseLayout = (props: Props) => {
     image = '/images/og-default.png',
     children,
   } = props;
+
+  const imageUrl = image.includes('http') ? image : `https://esthermakes.tech${image}`;
+
   return (
     <>
       <Head>
@@ -25,16 +28,12 @@ export const BaseLayout = (props: Props) => {
         <meta content={title} property="og:title" key="og:title" />
         <meta name="description" content={description} />
         <meta content="https://esthermakes.tech" property="og:url" key="og:url" />
-        <meta content={`https://esthermakes.tech${image}`} property="og:image" key="og:image" />
+        <meta content={imageUrl} property="og:image" key="og:image" />
 
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
         <meta property="twitter:title" content={title} key="twitter:title" />
-        <meta
-          property="twitter:image"
-          content={`https://esthermakes.tech${image}`}
-          key="twitter:image"
-        />
+        <meta property="twitter:image" content={imageUrl} key="twitter:image" />
         <meta name="twitter:site" content="@esthermakestech" key="twitter:site" />
 
         {/* Favicons */}
