@@ -1,10 +1,7 @@
 import { FC } from 'react';
+import { HeadingProps } from 'react-markdown/lib/ast-to-react';
 
-type Props = {
-  children?: React.ReactNode;
-};
-
-export const Heading3: FC<Props> = ({ children, ...props }) => {
+export const Heading3: FC<HeadingProps> = ({ children, ...props }) => {
   return (
     <h3 className="mt-4" {...props}>
       {children}
