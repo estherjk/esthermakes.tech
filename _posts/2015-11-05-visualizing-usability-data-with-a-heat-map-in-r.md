@@ -135,15 +135,19 @@ ggsave(filename='heatmap.png', width=6, height=3)
 The following pictures show what's happening at each step.
 
 Create heat map:
+
 ![1. Create heat map](/images/uxr-heatmap/uxr-heatmap-step1.png)
 
 Add text:
+
 ![2. Add text](/images/uxr-heatmap/uxr-heatmap-step2.png)
 
 Re-size the plot:
+
 ![3. Re-size the plot](/images/uxr-heatmap/uxr-heatmap-step3.png)
 
 Give finishing touches:
+
 ![4. Give finishing touches](/images/uxr-heatmap/uxr-heatmap.png)
 
 There's our final plot. We can then save it!
