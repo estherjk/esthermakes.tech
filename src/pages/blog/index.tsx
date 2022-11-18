@@ -29,8 +29,10 @@ const BlogPage = (props: Props) => {
             {posts.map((post) => (
               <tr key={post.slug} className="border-b border-gray-200 dark:border-gray-700">
                 <td className="py-4 text-left">
-                  <Link href={`/blog/${post.slug}`}>
-                    <a className="no-underline hover:underline hover:decoration-1">{post.title}</a>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="no-underline hover:underline hover:decoration-1">
+                    {post.title}
                   </Link>
                 </td>
                 <td className="py-4 text-right">
