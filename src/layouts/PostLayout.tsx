@@ -1,6 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkSlug from 'remark-slug';
+import remarkUnwrapImages from 'remark-unwrap-images';
 
 import { CodeBlock, Heading2, Heading3, Image, UnorderedList } from '@src/components/Renderers';
 import { Title } from '@src/components/Typography';
@@ -31,7 +32,9 @@ const PostLayout = (props: Props) => {
           <p className="text-gray-500 dark:text-gray-400">{formatDate(post.dateCreated)}</p>
         </div>
 
-        <ReactMarkdown components={components} remarkPlugins={[remarkGfm, remarkSlug]}>
+        <ReactMarkdown
+          components={components}
+          remarkPlugins={[remarkGfm, remarkSlug, remarkUnwrapImages]}>
           {post.content}
         </ReactMarkdown>
       </div>

@@ -15,10 +15,10 @@ export const Navbar = () => {
 
       return (
         <li key={index}>
-          <Link href={link.url}>
-            <a className={`${baseStyle} ${router.pathname == link.url ? activeStyle : ''}`}>
-              {link.title}
-            </a>
+          <Link
+            href={link.url}
+            className={`${baseStyle} ${router.pathname == link.url ? activeStyle : ''}`}>
+            {link.title}
           </Link>
         </li>
       );
@@ -28,13 +28,11 @@ export const Navbar = () => {
   return (
     <header className="flex w-full px-4 md:px-8 my-6">
       <Link href="/">
-        <a>
-          <img
-            src="/logo/logo-avatar-196x196.png"
-            alt="Logo"
-            className="max-w-none w-8 h-8 rounded-full border border-gray-200 dark:border-gray-700"
-          />
-        </a>
+        <img
+          src="/logo/logo-avatar-196x196.png"
+          alt="Logo"
+          className="max-w-none w-8 h-8 rounded-full border border-gray-200 dark:border-gray-700"
+        />
       </Link>
 
       <div className="flex flex-grow items-center">

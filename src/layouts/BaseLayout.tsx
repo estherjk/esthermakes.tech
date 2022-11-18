@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 
 import { Footer, Navbar } from '@src/components';
 
@@ -48,21 +49,22 @@ export const BaseLayout = (props: Props) => {
         <link rel="logo-circle-precomposed" sizes="152x152" href="/logo/logo-avatar-152x152.png" />
         <link rel="logo-circle-precomposed" sizes="167x167" href="/logo/logo-avatar-167x167.png" />
         <link rel="logo-circle-precomposed" sizes="180x180" href="/logo/logo-avatar-180x180.png" />
-
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQ3KH6PLYF"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-  
-            gtag('config', 'G-EQ3KH6PLYF');
-            `,
-          }}
-        />
       </Head>
+
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-EQ3KH6PLYF"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-EQ3KH6PLYF');
+        `}
+      </Script>
 
       {/* For sticky footer */}
       <div className="flex flex-col min-h-screen max-w-screen-2xl mx-auto">

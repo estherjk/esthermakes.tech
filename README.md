@@ -14,13 +14,17 @@ Check out [next-ts-template](https://github.com/estherjk/next-ts-template) to ge
 
 ## Getting Started
 
+### Installing dependencies
+
 ```bash
-yarn
-yarn dev
+nom install
+
+# Configure husky
+npm run prepare
 ```
 
-If you're using Gitkraken, run the following to [configure husky](https://github.com/typicode/husky/issues/875#issue-809587895):
+### Running the development server
 
 ```bash
-yarn husky:install
+npm run dev
 ```
