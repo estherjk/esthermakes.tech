@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { AppearanceListGroup } from '@src/components/AppearanceControl';
 import { appearanceControls } from '@src/data';
-import { useAppearance } from '@src/hooks';
+import { useAppearance, useOutsideClick } from '@src/hooks';
 import { AppearanceMode } from '@src/types';
 
 export const AppearanceButton = () => {
@@ -19,16 +19,9 @@ export const AppearanceButton = () => {
     setShowListGroup(false);
   };
 
-  useEffect(() => {
-    const handleWindowClick = () => {
-      setShowListGroup(false);
-    };
-
-    if (showListGroup) {
-      window.addEventListener('click', handleWindowClick);
-    }
-    return () => window.removeEventListener('click', handleWindowClick);
-  }, [showListGroup]);
+  const ref = useOutsideClick(() => {
+    setShowListGroup(false);
+  });
 
   // Update icon when system appearance changes
   // NOTE: Feels a bit like DRY here... (see `useAppearance`)
@@ -71,6 +64,7 @@ export const AppearanceButton = () => {
         aria-label="Appearance button"
         data-toggle="appearanceDropdown"
         className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800"
+        ref={ref}
         onClick={onClick}>
         <i className={icon} />
       </button>
