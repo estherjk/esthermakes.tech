@@ -1,26 +1,23 @@
 import { ReactNode } from 'react';
+import { CodeProps } from 'react-markdown/lib/ast-to-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 // Import the desired style using `cjs` instead of `esm`
 // See: https://github.com/react-syntax-highlighter/react-syntax-highlighter/issues/230#issuecomment-568377353
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
-type Props = {
-  inline?: boolean;
-  className?: string;
-  children: ReactNode;
-};
-
-// Reference: https://github.com/remarkjs/react-markdown#use-custom-components-syntax-highlight
-export const CodeBlock = (props: Props) => {
-  const { inline, className, children } = props;
+// References:
+//  - https://github.com/remarkjs/react-markdown#use-custom-components-syntax-highlight
+//  - https://github.com/react-syntax-highlighter/react-syntax-highlighter/issues/479#issuecomment-1267772279
+export const CodeBlock = (codeProps: CodeProps) => {
+  const { node, inline, className, children, style, ...props } = codeProps;
 
   const match = /language-(\w+)/.exec(className || '');
 
   return !inline && match ? (
     <div className="tracking-normal text-sm my-8">
-      <SyntaxHighlighter style={dracula} language={match[1]}>
-        {children}
+      <SyntaxHighlighter style={dracula} language={match[1]} PreTag="div" {...props}>
+        {String(children).replace(/\n$/, '')}
       </SyntaxHighlighter>
     </div>
   ) : (
