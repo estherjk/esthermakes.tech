@@ -42,7 +42,7 @@ Attach the Micro USB OTG to USB adapter to J16 and connect the USB device (I am 
 Let's check if the USB device is detected. First, SSH into Edison:
 
 ```bash
-  ssh root@myedison.local
+ssh root@myedison.local
 ```
 
 where `myedison` is the name of your Edison.
