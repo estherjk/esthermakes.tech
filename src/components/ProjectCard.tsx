@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { Project } from '@src/types';
 import { formatDate } from '@src/util';
 
@@ -13,7 +15,9 @@ export const ProjectCard = (props: Props) => {
         target="_blank"
         className="flex-1 rounded border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 overflow-hidden hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-500 no-underline"
         rel="noreferrer">
-        <img className="w-full" src={image} alt={description} />
+        <div className="w-full h-40 relative">
+          <Image className="object-cover" src={image} alt={description} fill />
+        </div>
 
         <div className="px-4 py-2">
           <h2 className="text-base mb-1">{title}</h2>
