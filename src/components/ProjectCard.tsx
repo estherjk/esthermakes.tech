@@ -15,7 +15,7 @@ export const ProjectCard = (props: Props) => {
         target="_blank"
         className="flex-1 rounded border border-gray-200 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 overflow-hidden hover:shadow-lg hover:shadow-gray-400 dark:hover:shadow-gray-500 no-underline"
         rel="noreferrer">
-        <div className="w-full h-40 relative">
+        <div className="w-full h-44 relative">
           <Image className="object-cover" src={image} alt={description} fill />
         </div>
 
