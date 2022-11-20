@@ -130,11 +130,4 @@ export const projects: Project[] = [
     url: 'https://github.com/estherjk/potter-pi',
     dateUpdated: '2020-02-24',
   },
-  {
-    title: 'rte-angular',
-    image: '/images/projects/rte-angular.jpg',
-    description: 'An AngularJS rich-text editor',
-    url: 'https://github.com/estherjk/rte-angular',
-    dateUpdated: '2015-12-12',
-  },
 ];
