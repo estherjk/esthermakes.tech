@@ -30,7 +30,7 @@ export const Footer = () => {
 
           <div className="col-span-6 flex justify-center items-center">
             <span className="text-sm text-gray-500 dark:text-gray-400">
-              © 2022 Esther Jun Kim.{' '}
+              © 2023 Esther Jun Kim.{' '}
               <a
                 href="https://github.com/estherjk/esthermakes.tech/blob/main/LICENSE"
                 className="text-sm text-gray-500 dark:text-gray-400"
