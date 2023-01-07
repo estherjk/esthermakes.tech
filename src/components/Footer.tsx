@@ -48,7 +48,7 @@ export const Footer = () => {
       <div className="hidden md:block">
         <div className="grid grid-cols-6 gap-4">
           <div className="col-span-2 flex justify-start items-center">
-            <span className="text-sm text-gray-500 dark:text-gray-400">© 2022 Esther Jun Kim</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400">© 2023 Esther Jun Kim</span>
           </div>
 
           <div className="col-span-2 flex justify-center items-center">
