@@ -15,7 +15,12 @@ export const CodeBlock = (codeProps: CodeProps) => {
 
   return !inline && match ? (
     <div className="tracking-normal text-sm my-8">
-      <SyntaxHighlighter style={dracula} language={match[1]} PreTag="div" {...props}>
+      <SyntaxHighlighter
+        style={dracula}
+        language={match[1]}
+        PreTag="div"
+        codeTagProps={{ style: { fontFamily: 'var(--font-fira-code)' } }}
+        {...props}>
         {String(children).replace(/\n$/, '')}
       </SyntaxHighlighter>
     </div>
