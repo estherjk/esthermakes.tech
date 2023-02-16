@@ -1,12 +1,11 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
     fontFamily: {
-      sans: ['Inter', ...fontFamily.sans],
-      mono: ['Consolas', 'Monaco', '"Andale Mono"', '"Ubuntu Mono"', 'monospace'],
+      sans: ['var(--font-inter)'],
+      mono: ['var(--font-fira-code)'],
     },
     colors: {
       transparent: 'transparent',
