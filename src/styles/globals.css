@@ -6,27 +6,26 @@
   body {
     @apply bg-white dark:bg-black
       text-gray-700 dark:text-gray-200
-      tracking-tight;
   }
 
   h1 {
     @apply text-black dark:text-white 
-      text-3xl tracking-tight font-semibold mb-4;
+      text-3xl font-semibold mb-4;
   }
 
   h2 {
     @apply text-black dark:text-white 
-      text-2xl tracking-tight font-semibold mb-2;
+      text-2xl font-semibold mb-2;
   }
 
   h3 {
     @apply text-black dark:text-white
-      text-lg tracking-tight font-semibold mb-2;
+      text-lg font-semibold mb-2;
   }
 
   h4 {
     @apply text-black dark:text-white
-      text-base tracking-tight font-semibold mb-2;
+      text-base font-semibold mb-2;
   }
 
   p {
