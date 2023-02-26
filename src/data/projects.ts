@@ -89,13 +89,6 @@ export const projects: Project[] = [
     dateUpdated: '2019-11-08',
   },
   {
-    title: 'O Holy Night',
-    image: '/images/projects/o-holy-night.jpg',
-    description: 'Recreating the Nativity Scene using the Particle Photon and NeoPixels',
-    url: 'https://github.com/estherjk/o-holy-night',
-    dateUpdated: '2016-12-23',
-  },
-  {
     title: 'Ok Google Pi Zero',
     image: '/images/projects/ok-google-pi-zero.jpg',
     description: 'Using the Google Assistant SDK on a Raspberry Pi Zero W',
