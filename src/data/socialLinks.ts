@@ -19,7 +19,7 @@ export const socialLinks: SocialMedia[] = [
   {
     title: 'Twitter',
     url: 'https://twitter.com/esthermakestech',
-    icon: 'fa-brands fa-twitter',
+    icon: 'fa-brands fa-x-twitter',
   },
   {
     title: 'LinkedIn',
