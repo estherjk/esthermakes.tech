@@ -14,6 +14,14 @@ Check out [next-ts-template](https://github.com/estherjk/next-ts-template) to ge
 
 ## Getting Started
 
+### Configuring environment
+
+Make a copy of `.env.example` & update the environment variables:
+
+```bash
+cp .env.example .env
+```
+
 ### Installing dependencies
 
 ```bash
