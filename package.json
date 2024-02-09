@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-pro": "^6.0.0",
+    "@fortawesome/fontawesome-pro": "^6.5.1",
     "@next/font": "^13.1.6",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
