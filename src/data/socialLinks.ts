@@ -2,11 +2,6 @@ import { SocialMedia } from '@src/types';
 
 export const socialLinks: SocialMedia[] = [
   {
-    title: 'GitHub',
-    url: 'https://github.com/estherjk',
-    icon: 'fa-brands fa-github',
-  },
-  {
     title: 'YouTube',
     url: 'https://www.youtube.com/c/EstherMakesTech',
     icon: 'fa-brands fa-youtube',
@@ -17,7 +12,12 @@ export const socialLinks: SocialMedia[] = [
     icon: 'fa-brands fa-instagram',
   },
   {
-    title: 'Twitter',
+    title: 'GitHub',
+    url: 'https://github.com/estherjk',
+    icon: 'fa-brands fa-github',
+  },
+  {
+    title: 'X',
     url: 'https://twitter.com/estherjk_',
     icon: 'fa-brands fa-x-twitter',
   },
