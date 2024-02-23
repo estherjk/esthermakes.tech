@@ -18,7 +18,7 @@ export const socialLinks: SocialMedia[] = [
   },
   {
     title: 'Twitter',
-    url: 'https://twitter.com/esthermakestech',
+    url: 'https://twitter.com/estherjk_',
     icon: 'fa-brands fa-x-twitter',
   },
   {
